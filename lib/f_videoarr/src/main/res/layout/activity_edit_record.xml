@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lemon_bg"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/lemon_edit_top_back_compile_rl"
+        layout="@layout/lemon_common_top_compile"></include>
+
+    <ListView
+        android:id="@+id/lemon_edit_share_record_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lemon_edit_top_back_compile_rl"></ListView>
+
+    <LinearLayout
+        android:id="@+id/lemon_share_record_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_high"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lemon_top_bg"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/lemon_share_record_bt_Select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/lemon_Select"/>
+
+        <Button
+            android:id="@+id/lemon_share_record_bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/lemon_delete"/>
+
+    </LinearLayout>
+</RelativeLayout>

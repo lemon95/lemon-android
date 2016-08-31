@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_high"
+        android:background="@color/lemon_top_bg">
+
+
+        <LinearLayout
+            android:id="@+id/lemon_search_sousuo_back"
+            android:layout_width="@dimen/lemon_search_content_movies_size"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/lemon_iv_top_left_size"
+                android:layout_height="@dimen/lemon_iv_top_left_size"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_fanhui" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lemon_resou_sousuo"
+            android:layout_width="@dimen/lemon_search_content_movies_size"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/lemon_video_recording_top"
+                android:layout_height="@dimen/lemon_video_recording_top"
+                android:src="@drawable/lemon_sousuo" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/lemon_sousuo_ll_resou_ed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lemon_private_search_left"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/lemon_resou_sousuo"
+            android:layout_toRightOf="@id/lemon_search_sousuo_back"
+            android:background="@drawable/lemon_common_ed_sousuo"
+            android:hint="@string/lemon_yingshisousuo"
+            android:maxLength="15"
+            android:paddingLeft="@dimen/lemon_private_search_left2"
+            android:textColor="@color/lemon_white"
+            android:textColorHint="#99ffffff"
+            android:textSize="@dimen/lemon_private_search_ed_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/lemon_content_view"></include>
+
+    <include
+        layout="@layout/lemon_common_load_ma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg">
+
+        <LinearLayout
+            android:id="@+id/lemon_sousuo_ll_resou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/lemon_private_search_left2"
+            android:layout_marginRight="@dimen/lemon_private_search_left2"
+            android:layout_marginTop="@dimen/lemon_private_search_tv_top"
+            android:background="@color/lemon_bg"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="@dimen/lemon_private_search_tv_width"
+                android:layout_height="@dimen/lemon_private_search_tv_height"
+                android:layout_marginLeft="@dimen/lemon_private_search_tv_left"
+                android:background="@color/lemon_anniu_resuo_back"
+                android:gravity="center"
+                android:text="@string/lemon_resoubang"
+                android:textColor="@color/lemon_white"
+                android:textSize="@dimen/lemon_private_search_tv_size" />
+
+            <View
+                style="@style/lemon_line"
+                android:layout_marginLeft="@dimen/lemon_private_search_tv_left"
+                android:layout_marginRight="@dimen/lemon_private_search_tv_left"
+                android:layout_marginTop="@dimen/lemon_private_search_tv_left_top"></View>
+
+            <GridView
+                android:id="@+id/lemon_sousuo_ll_gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/lemon_private_search_tv_left_bottom"
+                android:layout_marginLeft="@dimen/lemon_private_search_tv_left"
+                android:layout_marginRight="@dimen/lemon_private_search_tv_left"
+                android:layout_marginTop="@dimen/lemon_private_search_tv_height"
+                android:fadingEdge="none"
+                android:horizontalSpacing="@dimen/lemon_private_search_tv_height"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/lemon_private_search_tv_height" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lemon_sousuo_ll_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lemon_bg"
+            android:orientation="vertical">
+
+            <com.lemon95.lemonvideolib.user.myview.MarqueeTextView
+                android:id="@+id/lemon_watch_the_lookVip_daoqishijian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lemon_search_top"
+                android:layout_gravity="center_vertical"
+                android:background="@color/lemon_white"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/lemon_search_tv_top"
+                android:paddingRight="@dimen/lemon_search_tv_top"
+                android:singleLine="true"
+                android:text="@string/lemon_search_tishi"
+                android:textColor="@color/lemon_dingzhi_bg_color"
+                android:textSize="@dimen/lemon_type_size2" />
+
+            <View
+                android:id="@+id/lemon_watch_the_lookVip_line"
+                style="@style/lemon_line"
+                android:layout_below="@id/lemon_watch_the_lookVip_daoqishijian"></View>
+
+            <Button
+                android:id="@+id/lemon_sousuo_ll_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lemon_skin_bug_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lemon_white"
+                android:text="@string/lemon_search_content_movies_xiangkan"
+                android:textColor="@color/lemon_top_bg"
+                android:textSize="16sp" />
+
+            <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lemon_sousuo_ll_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/lemon_sousuo_ll_bt"
+                android:layout_below="@id/lemon_watch_the_lookVip_line"
+                android:layout_marginTop="@dimen/lemon_vipactivity_top_20"
+                android:dividerHeight="0.2dp"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="@color/lemon_type_color"
+                ptr:ptrMode="pullFromEnd"
+                ptr:ptrRotateDrawableWhilePulling="true"></com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lemon_search_search_listview_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/lemon_private_search_tv_left"
+            android:background="@color/lemon_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/lemon_not_what_ll_tv_wight"
+                android:layout_height="@dimen/lemon_not_what_ll_tv_hight"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/lemon_no_dingzhi"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/lemon_resoubang_wu"
+                android:textSize="@dimen/lemon_camera_but_text_size"></TextView>
+
+            <Button
+                android:id="@+id/lemon_search_search_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lemon_skin_bug_height"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/lemon_private_custom_dianji_left"
+                android:background="@drawable/lemon_common_but_bg"
+                android:text="@string/lemon_resoubang_wu_dingzhi"
+                android:textColor="@color/lemon_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/lemon_content_view"></include>
+    </RelativeLayout>
+</LinearLayout>

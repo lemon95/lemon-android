@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lemon_episode_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/lemon_variety_padding_5dp"
+    android:paddingTop="@dimen/lemon_variety_padding_5dp">
+
+    <ImageView
+        android:id="@+id/lemon_ep_image"
+        android:layout_width="@dimen/lemon_episode_image_width"
+        android:layout_height="@dimen/lemon_episode_image_height"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/lemon_def_tv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lemon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:maxLines="@integer/lemon_max_lines"
+            android:text="..."
+            android:textColor="@color/lemon_variety_episode_title_dark"
+            android:textSize="@dimen/lemon_variety_episode_title_sz"/>
+
+        <TextView
+            android:id="@+id/lemon_episode_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/lemon_main_dianjiliang"
+            android:drawablePadding="@dimen/lemon_drawable_padding"
+            android:singleLine="true"
+            android:text="888"
+            android:textColor="@color/lemon_variety_episode_hot_gray"
+            android:textSize="@dimen/lemon_variety_episode_hot_sz"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

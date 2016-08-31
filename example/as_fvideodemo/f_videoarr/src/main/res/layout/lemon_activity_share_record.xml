@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lemon_top_back_compile_rl"
+        layout="@layout/lemon_common_top_compile"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg">
+
+        <LinearLayout
+            android:id="@+id/lemon_share_record_listview_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lemon_share_record_listview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:dividerHeight="0.2dp"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="@color/lemon_type_color"
+                ptr:ptrMode="pullFromStart"
+                ptr:ptrRotateDrawableWhilePulling="true"></com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView>
+
+            <LinearLayout
+                android:id="@+id/lemon_share_record_bt_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lemon_anniu_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/lemon_buy_button_padding"
+                android:paddingRight="@dimen/lemon_buy_button_padding"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/lemon_share_record_bt_Select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/lemon_skin_bug_height"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lemon_common_but_xuanze"
+                    android:text="@string/lemon_Select"
+                    android:textColor="@color/lemon_anniu_bg"
+                    android:textSize="@dimen/lemon_buy_button_size" />
+
+                <Button
+                    android:id="@+id/lemon_share_record_bt_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/lemon_skin_bug_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lemon_common_but_shanchu"
+                    android:text="@string/lemon_delete"
+                    android:textColor="@color/lemon_white_f"
+                    android:textSize="@dimen/lemon_buy_button_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lemon_share_record_listview_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lemon_top_back_compile_rl"
+            android:layout_marginTop="@dimen/lemon_watch_the_record_top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/lemon_not_what_ll_tv_wight"
+                android:layout_height="@dimen/lemon_not_what_ll_tv_hight"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/lemon_no_dingzhi"></ImageView>
+
+            <TextView
+                android:id="@+id/lemon_share_record_er_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/lemon_kongbai"
+                android:textSize="@dimen/lemon_not_what_ll_tv_textSize"></TextView>
+        </LinearLayout>
+
+        <include layout="@layout/lemon_content_view"></include>
+
+        <include
+            layout="@layout/lemon_common_load_ma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</LinearLayout>

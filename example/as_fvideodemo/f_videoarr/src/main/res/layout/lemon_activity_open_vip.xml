@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_open_vip_hi"
+        android:layout_marginBottom="@dimen/lemon_open_vip_hi_padd"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_padd"
+        android:background="@color/lemon_open_vip_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+            android:text="@string/lemon_open_vip_tishi"
+            android:textColor="@color/lemon_bg"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/lemon_line"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_margin"
+        android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+        android:text="@string/lemon_open_vip_fuwu"
+        android:textSize="@dimen/lemon_open_vip_tv_size"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_Extra"
+        android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+        android:text="@string/lemon_open_vip_neirong"
+        android:textSize="@dimen/lemon_open_vip_tv_size"
+        />
+
+    <TextView
+        android:id="@+id/lemon_tv_1putong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_Extra"
+        android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+        android:text="@string/lemon_open_vip_putong"
+        android:textSize="@dimen/lemon_open_vip_tv_size"
+        />
+
+    <TextView
+        android:id="@+id/lemon_tv_2putong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_Extra"
+        android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+        android:text="@string/lemon_open_vip_gaoji"
+        android:textSize="@dimen/lemon_open_vip_tv_size"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_padd"
+        android:background="@color/lemon_bg"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lemong_gaoji"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+            android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+            android:layout_weight="1"
+            android:background="@drawable/lemon_bg_open_vip"
+            android:text="@string/lemon_open_vip_openputong"
+            android:textColor="@color/lemon_bg"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

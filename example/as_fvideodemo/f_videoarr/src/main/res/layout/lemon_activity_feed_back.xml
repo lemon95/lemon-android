@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/lemon_common_top_back">
+    </include>
+
+    <include
+        layout="@layout/lemon_common_load_ma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <include layout="@layout/lemon_content_view"></include>
+
+    <ScrollView
+        android:id="@+id/lemon_search_sv_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lemon_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lemon_feedbock_size_top"
+                android:background="@color/lemon_white"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/lemon_line"/>
+
+                <EditText
+                    android:id="@+id/lemon_search_fankui_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lemon_feedbock_size_ed_wi"
+                    android:background="@color/lemon_white"
+                    android:gravity="top"
+                    android:hint="@string/lemon_feed_tishi"
+                    android:paddingLeft="@dimen/lemon_feedbock_size_pann"
+                    android:paddingRight="@dimen/lemon_feedbock_size_pann"
+                    android:textSize="16dp"
+                    android:paddingTop="@dimen/lemon_feedbock_size_pann"
+                    android:textColor="@color/lemon_record_tv"/>
+
+                <View
+                    style="@style/lemon_line"/>
+
+            </LinearLayout>
+
+            <com.lemon95.lemonvideolib.user.myview.MyListView
+                android:id="@+id/lemon_search_fankui_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lemon_feedbock_size_Bt_padd"
+                android:background="@color/lemon_white"
+                android:dividerHeight="0.2dp">
+            </com.lemon95.lemonvideolib.user.myview.MyListView>
+
+
+            <Button
+                android:id="@+id/lemon_search_fankui_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lemon_skin_bug_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/lemon_feedbock_size_pann"
+                android:layout_marginRight="@dimen/lemon_feedbock_size_pann"
+                android:layout_marginTop="@dimen/lemon_feedbock_size_ed_hi"
+                android:background="@drawable/lemon_common_but_bg"
+                android:text="@string/lemon_tijiao"
+                android:textColor="@color/lemon_white"
+                android:textSize="@dimen/lemon_feedbock_size_bt"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

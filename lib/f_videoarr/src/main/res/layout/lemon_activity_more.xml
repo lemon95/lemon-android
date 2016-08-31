@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lemon_bg"
+                android:orientation="vertical"
+                tools:context="com.lemon95.lemonvideolib.pptv.view.MoreActivity">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <LinearLayout
+        android:id="@+id/lemon_ll_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/lemon_high"
+        android:background="@color/lemon_white">
+
+        <GridView
+            android:id="@+id/lemon_more_type_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:paddingTop="@dimen/lemon_fab_margin"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"></GridView>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/lemon_ll_grid_view"
+        android:background="@color/lemon_main_line"></View>
+
+    <include
+        layout="@layout/lemon_common_action_but"
+        android:visibility="gone"
+        ></include>
+
+
+</RelativeLayout>

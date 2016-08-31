@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <include layout="@layout/lemon_content_view"></include>
+
+    <include
+        layout="@layout/lemon_common_load_ma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lemon_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lemon_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/lemon_special_feature_iv_tupian"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/lemon_banner_def"/>
+
+                <View style="@style/lemon_line"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lemon_white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/lemon_type_top"
+                    android:paddingTop="@dimen/lemon_type_top">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/lemon_type_title_hig"
+                        android:layout_marginLeft="@dimen/lemon_type_title_left"
+                        android:src="@drawable/lemon_fenlei"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/lemon_type_top"
+                        android:text="@string/lemon_special_feature_jieshao"
+                        android:textColor="@color/lemon_record_tv"
+                        android:textSize="@dimen/lemon_type_text_size"/>
+                </LinearLayout>
+
+                <View style="@style/lemon_line"></View>
+
+                <TextView
+                    android:id="@+id/lemon_special_feature_tv_jieshao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lemon_white"
+                    android:lineSpacingExtra="8dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/lemon_type_color"
+                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                <View
+                    style="@style/lemon_line"
+                    android:layout_marginBottom="5dp"></View>
+
+                <View
+                    style="@style/lemon_line"></View>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lemon_special_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lemon_white"
+                android:orientation="vertical">
+
+                <com.lemon95.lemonvideolib.common.myview.MyGridView
+                    android:id="@+id/lemon_pull_special_refresh_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="fill"
+                    android:horizontalSpacing="5dp"
+                    android:listSelector="@color/lemon_white"
+                    android:numColumns="3"
+                    android:paddingLeft="@dimen/lemon_indicator_internal_padding"
+                    android:paddingRight="@dimen/lemon_indicator_internal_padding"
+                    android:paddingTop="@dimen/lemon_intro_margin_top"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

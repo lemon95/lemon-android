@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="105dp"
+              android:layout_margin="5dp"
+              android:layout_marginTop="15dp"
+              android:background="@color/lemon_white"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/lemon_characteris_iv_tu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/lemon_gaoxiao"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lemon_characteris_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="专题名称"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/lemon_characteris_tv_maioshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:text="miaoshuadasdasdfbaiouofwqoiuanhdr8obviuwahnejfq9wolutavhco9eucilhkjsfc"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/lemon_characteris_tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="2015-02-23 23:12:23"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

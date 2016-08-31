@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ptr="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical"
+              tools:context="com.lemon95.lemonvideolib.MainActivity">
+
+    <include layout="@layout/lemon_common_main_top"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg">
+
+        <include layout="@layout/lemon_content_view"></include>
+
+        <include layout="@layout/lemon_common_load"></include>
+
+        <LinearLayout
+            android:id="@+id/lemon_ll_vip_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lemon_bg">
+
+            <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshScrollView
+                android:id="@+id/pull_refresh_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lemon_bg"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="@color/lemon_type_color"
+                ptr:ptrMode="pullFromStart"
+                ptr:ptrRotateDrawableWhilePulling="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lemon_search_content_movies_ll_editText_height"
+                        android:background="@android:color/white"
+                        android:paddingBottom="@dimen/lemon_image_gap"
+                        android:paddingLeft="@dimen/lemon_more_item_top"
+                        android:paddingRight="@dimen/lemon_more_item_top"
+                        android:paddingTop="@dimen/lemon_image_gap">
+
+                        <TextView
+                            android:id="@+id/lemon_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/lemon_edittext_bg"
+                            android:drawableLeft="@drawable/lemon_main_sousuo"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="8dp"
+                            android:text="@string/lemon_search_ed"
+                            android:textColor="@color/lemon_seach_tv"/>
+
+                    </LinearLayout>
+
+                    <!--banner部分-->
+                    <include layout="@layout/lemon_common_banner"></include>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        android:paddingTop="@dimen/lemon_type_top">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/ll_movie_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_movie"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_movie"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_tv_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_tv"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_tv"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_live_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_live"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_live"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_special_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_donghua"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_donghua"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/lemon_type_top"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/ll_variety_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_variety"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_variety"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_yiyuan_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_tese_zhauanti"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_special"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_sport_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_sport"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_sport"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_more_id"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/lemon_iv_type_size"
+                                    android:layout_height="@dimen/lemon_iv_type_size"
+                                    android:src="@drawable/lemon_gaoxiao"/>
+
+                                <TextView
+                                    style="@style/main_type_text"
+                                    android:text="@string/lemon_gaoxiao"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="gone"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="gone"></View>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_live_main_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_live_name"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_live_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_live_item"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"
+                        ></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"
+                        ></View>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_recommend_main_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_recommend_name"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_recommend_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_recommend_item"></include>
+                    </LinearLayout>
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lemon_main_line"></View>-->
+
+
+                    <LinearLayout
+                        android:id="@+id/lemon_ll_wuye_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/lemon_type_top"
+                            android:background="@color/lemon_main_line"></View>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_type_name"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_ll_wuye"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_wuye_main"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_hot_main_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_hot_tv"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_hot_main_move"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_hot_item"></include>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_special"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_special_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_special_item"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_donghuo_main_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_donghua"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_donghuo_main_move"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_donghuo_item"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_zongyi_main_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_variety"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_zongyi_main_move"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_zongyi_item"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="visible"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="visible"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_sport"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_sport_main_move"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_sport_item"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="visible"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="visible"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_gaoxiao"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_sport_main_gaoxiao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_gaoxiao_item"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="visible"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"
+                        android:visibility="visible"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+                                <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+                                <!--android:src="@drawable/lemon_fenlei"/>-->
+                                <View
+                                    style="@style/lemon_side_title_line"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_qingzi"
+                                    android:textColor="@color/lemon_record_tv"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_sport_main_shaoer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textColor="@color/lemon_movie_msg"
+                                    android:textSize="@dimen/lemon_type_text_size"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_shaoer_item"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshScrollView>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/lemon_common_action_but"></include>
+    </RelativeLayout>
+
+
+</LinearLayout>

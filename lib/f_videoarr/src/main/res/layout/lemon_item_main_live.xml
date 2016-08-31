@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_live_main_img_h"
+        android:background="#EFEFEF">
+
+        <ImageView
+            android:id="@+id/lemon_img_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lemon_def_tv" />
+
+        <LinearLayout
+            android:id="@+id/lemon_ll_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/lemon_video_msg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/lemon_banner_focus_buttom">
+
+            <TextView
+                android:id="@+id/lemon_tv_title1"
+                style="@style/lemon_main_video_msg"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/lemon_tv_name1"
+        style="@style/main_type_text"
+        android:layout_gravity="left"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/lemon_tv_name"
+        style="@style/main_type_text2"
+        android:layout_gravity="left"
+        android:text="   "
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+</LinearLayout>

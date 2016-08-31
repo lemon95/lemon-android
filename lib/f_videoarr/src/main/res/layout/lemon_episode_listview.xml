@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.lemon95.lemonvideolib.movie.widget.MyListView
+        android:id="@+id/lemon_episodes_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_white"
+        android:divider="@color/lemon_record_line"
+        android:dividerHeight="0.2dp"
+        android:paddingLeft="@dimen/lemon_sub_title_margin_side"
+        android:paddingRight="5dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

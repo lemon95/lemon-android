@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_type_title_left"
+        android:layout_marginRight="@dimen/lemon_type_title_left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lemon_image_height"
+                android:background="@drawable/lemon_def_image">
+
+                <ImageView
+                    android:layout_width="@dimen/lemon_video_jiaobiao"
+                    android:layout_height="@dimen/lemon_video_jiaobiao" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lemon_video_msg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lemon_banner_focus_buttom">
+
+                    <TextView
+                        style="@style/lemon_main_video_msg"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lemon_video_msg" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/main_type_text"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lemon_video_name" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lemon_image_gap"
+            android:layout_marginRight="@dimen/lemon_image_gap"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lemon_image_height"
+                android:background="@drawable/lemon_def_image">
+
+                <ImageView
+                    android:layout_width="@dimen/lemon_video_jiaobiao"
+                    android:layout_height="@dimen/lemon_video_jiaobiao" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lemon_video_msg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lemon_banner_focus_buttom">
+
+                    <TextView
+                        style="@style/lemon_main_video_msg"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lemon_video_msg" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/main_type_text"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lemon_video_name" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lemon_image_height"
+                android:background="@drawable/lemon_def_image">
+
+                <ImageView
+                    android:layout_width="@dimen/lemon_video_jiaobiao"
+                    android:layout_height="@dimen/lemon_video_jiaobiao" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lemon_video_msg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lemon_banner_focus_buttom">
+
+                    <TextView
+                        style="@style/lemon_main_video_msg"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lemon_video_msg" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/main_type_text"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lemon_video_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

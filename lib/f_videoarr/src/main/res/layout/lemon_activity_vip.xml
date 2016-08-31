@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lemon_bg"
+                android:orientation="vertical"
+                tools:context="com.lemon95.lemonvideolib.movie.view.VipActivity">
+
+    <include
+        android:id="@+id/lemon_in_top"
+        layout="@layout/lemon_common_top_rig_img"></include>
+
+    <include layout="@layout/lemon_content_view"></include>
+
+    <include layout="@layout/lemon_common_load"></include>
+
+    <LinearLayout
+        android:id="@+id/lemon_ll_vip_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lemon_high"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lemon_white"
+            android:orientation="vertical">
+
+            <com.lynnchurch.horizontalscrollmenu.HorizontalScrollMenu
+                android:id="@+id/lemon_hsm_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lemon_main_line"></View>
+
+            <!-- <LinearLayout
+                 android:id="@+id/lemon_ll_menu"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <com.lynnchurch.horizontalscrollmenu.HorizontalScrollMenu
+                     android:id="@+id/lemon_hsm_container1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+                 <com.lynnchurch.horizontalscrollmenu.HorizontalScrollMenu
+                     android:id="@+id/lemon_hsm_container2"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+                 <com.lynnchurch.horizontalscrollmenu.HorizontalScrollMenu
+                     android:id="@+id/lemon_hsm_container3"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="@color/lemon_main_line"></View>
+
+             </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lemon_ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_white"
+        android:layout_below="@id/lemon_ll_vip_main"
+        android:orientation="vertical">
+
+        <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshGridView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lemon_pull_refresh_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="fill"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:background="@color/lemon_white"
+            android:listSelector="@color/lemon_bg"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            ptr:ptrHeaderTextColor="@color/lemon_type_color"
+            ptr:ptrMode="both" />
+
+    </LinearLayout>
+
+    <include layout="@layout/lemon_common_action_but"></include>
+
+</RelativeLayout>

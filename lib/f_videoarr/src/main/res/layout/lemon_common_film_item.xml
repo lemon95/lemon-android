@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_image_height"
+        android:background="#EFEFEF">
+
+        <ImageView
+            android:id="@+id/lemon_rl_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/lemon_def_image"/>
+
+        <ImageView
+            android:id="@+id/lemon_iv_file_item"
+            android:layout_width="@dimen/lemon_video_jiaobiao"
+            android:layout_height="@dimen/lemon_video_jiaobiao"/>
+
+        <LinearLayout
+            android:id="@+id/lemon_ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/lemon_video_msg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/lemon_banner_focus_buttom">
+
+            <TextView
+                android:id="@+id/lemon_tv_title"
+                style="@style/lemon_main_video_msg"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lemon_video_msg"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/lemon_tv_name"
+        style="@style/main_type_text"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/lemon_video_name"/>
+
+    <TextView
+        android:id="@+id/lemon_tv_click"
+        style="@style/main_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/lemon_type_text_top"
+        android:drawableLeft="@drawable/lemon_main_dianjiliang"
+        android:drawablePadding="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/lemon_dingzhi_tv_color"
+        android:textSize="@dimen/lemon_video_msg_size"/>
+
+</LinearLayout>

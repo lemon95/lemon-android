@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lemon_movie_zone_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<View-->
+        <!--style="@style/lemon_horizen_line"-->
+        <!--android:layout_marginTop="5dp" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_white"
+        android:paddingBottom="@dimen/lemon_type_top"
+        android:paddingTop="@dimen/lemon_type_top">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/lemon_line_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/lemon_type_title_hig"-->
+            <!--android:layout_marginLeft="@dimen/lemon_type_title_left"-->
+            <!--android:src="@drawable/lemon_fenlei" />-->
+        <View
+            android:id="@+id/lemon_line_img"
+            style="@style/lemon_side_title_line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/lemon_type_top"
+            android:layout_toRightOf="@id/lemon_line_img"
+            android:text="@string/lemon_movie_zone"
+            android:textColor="@color/lemon_sub_title"
+            android:textSize="@dimen/lemon_type_text_size" />
+
+        <TextView
+            android:id="@+id/lemon_talk_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/lemon_sub_title_margin_side"
+            android:textColor="@color/lemon_count_gray"
+            android:textSize="@dimen/lemon_count_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lemon_talk_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/lemon_sub_title_margin_side"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/lemon_img_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lemon_edit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/lemon_talk_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="4"
+                android:background="@drawable/lemon_comment_bg_gray"
+                android:gravity="center"
+                android:hint="@string/lemon_comment_hint"
+                android:padding="10dp"
+                android:textSize="@dimen/lemon_intro_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<View style="@style/lemon_horizen_line" />-->
+
+</LinearLayout>

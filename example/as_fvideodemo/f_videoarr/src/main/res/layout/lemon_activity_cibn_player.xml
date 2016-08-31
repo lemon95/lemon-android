@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/lemon_livetv_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.starschina.media.ThinkoPlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/lemon_livetv_controller"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <!-- 返回按钮 -->
+            <ImageButton
+                android:id="@+id/lemon_back_img_btn"
+                style="@style/venvy_media_controller_back_style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp" />
+
+
+            <ImageButton
+                android:id="@+id/lemon_pause_img_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/lemon_msg_bg"
+                android:gravity="center"
+                android:src="@drawable/venvy_sdk_media_controller_pause_bg" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

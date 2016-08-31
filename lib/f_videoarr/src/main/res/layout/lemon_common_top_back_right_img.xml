@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lemon_high"
+    android:background="@color/lemon_top_bg">
+
+    <TextView
+        android:id="@+id/lemon_movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/lemon_top_title_size"
+        android:textColor="@color/lemon_white"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/lemon_back_ll"
+        android:layout_width="@dimen/lemon_to_back"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/lemon_type_title_left">
+        <ImageView
+            android:layout_width="@dimen/lemon_iv_top_left_size"
+            android:layout_height="@dimen/lemon_iv_top_left_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_fanhui" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lemon_share_ll"
+        android:layout_width="@dimen/lemon_to_back"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/lemon_top_function_rig">
+
+        <ImageView
+            android:layout_width="@dimen/lemon_video_recording_top"
+            android:layout_height="@dimen/lemon_video_recording_top"
+            android:src="@drawable/lemon_share"/>
+    </LinearLayout>
+
+</RelativeLayout>

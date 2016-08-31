@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="bottomLineColor"/>
+    <attr format="dimension" name="bottomLineHeight"/>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="dividerColor"/>
+    <attr format="dimension" name="dividerMargin"/>
+    <attr format="dimension" name="dividerWidth"/>
+    <attr format="color" name="indicatorColor"/>
+    <attr format="dimension" name="indicatorHeight"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <bool name="circular_progress_indeterminate">true</bool>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <color name="checkbox_checked_color">#55b03d</color>
+    <color name="checkbox_color">#6d6d6d</color>
+    <color name="checkbox_mark_color">#eeeeee</color>
+    <color name="circle_button_color">#ff3f51b5</color>
+    <color name="circle_button_shadow_color">#ff000000</color>
+    <color name="circular_progress_color">#ff3f51b5</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="floating_edit_text_color">#ffc8c8c8</color>
+    <color name="floating_edit_text_error_color">#DB4437</color>
+    <color name="floating_edit_text_highlighted_color">#ff3f51b5</color>
+    <color name="lemon_anniu2_bg">#c81825</color>
+    <color name="lemon_anniu_bg">#32373e</color>
+    <color name="lemon_anniu_resuo_back">#f6afa9</color>
+    <color name="lemon_anniu_sousuo">#4cbac0</color>
+    <color name="lemon_anniu_tv">#ed6742</color>
+    <color name="lemon_banner_bg">#efefef</color>
+    <color name="lemon_banner_def">#e3ffc7</color>
+    <color name="lemon_bg">#f5f5f9</color>
+    <color name="lemon_black">#000000</color>
+    <color name="lemon_blacker">#000000</color>
+    <color name="lemon_buy_line_bg">#fff100</color>
+    <color name="lemon_camera_bg">#2c2c2c</color>
+    <color name="lemon_camera_but">#50efeb</color>
+    <color name="lemon_camera_progress_delete">#f68b2b</color>
+    <color name="lemon_camera_progress_overflow">#1b5d89</color>
+    <color name="lemon_camera_progress_split">#005084</color>
+    <color name="lemon_camera_progress_textcolor">#99a1b0</color>
+    <color name="lemon_camera_progress_three">#24ff00</color>
+    <color name="lemon_camera_textcolor">#c9c9c9</color>
+    <color name="lemon_comment_bg">#F7F8F8</color>
+    <color name="lemon_commenter_gray">#676767</color>
+    <color name="lemon_count_gray">#99a1b0</color>
+    <color name="lemon_custom_btn">#fc5144</color>
+    <color name="lemon_dingzhi_bg_color">#f39800</color>
+    <color name="lemon_dingzhi_color">#c1c1c1</color>
+    <color name="lemon_dingzhi_start_back">#eef79d3d</color>
+    <color name="lemon_dingzhi_tishi_bg_color">#dfdddd</color>
+    <color name="lemon_dingzhi_tishi_bg_text_color">#FF858485</color>
+    <color name="lemon_dingzhi_tv_color">#dddddd</color>
+    <color name="lemon_episode_index">#99a1b0</color>
+    <color name="lemon_episode_index_gray">#676767</color>
+    <color name="lemon_episode_playing_blue">#1ea9b0</color>
+    <color name="lemon_episode_playing_orange">#f39800</color>
+    <color name="lemon_error_title">#B1B3B5</color>
+    <color name="lemon_fankui_textcolor">#43c1ef</color>
+    <color name="lemon_focus">#5fff65</color>
+    <color name="lemon_grid_line">#F6F6F6</color>
+    <color name="lemon_main_line">#E1E1E1</color>
+    <color name="lemon_movie_intro">#676767</color>
+    <color name="lemon_movie_msg">#99a1b0</color>
+    <color name="lemon_open_vip_color">#99B0581E</color>
+    <color name="lemon_orange">#f39800</color>
+    <color name="lemon_pay_btn_bg">#ff4515</color>
+    <color name="lemon_pull_text_color">#e7839e8c</color>
+    <color name="lemon_record_line">#e1e1e1</color>
+    <color name="lemon_record_tv">#353535</color>
+    <color name="lemon_red">#d91212</color>
+    <color name="lemon_seach_tv">#b5b5b6</color>
+    <color name="lemon_set_text_color">#f39800</color>
+    <color name="lemon_sub_title">#353535</color>
+    <color name="lemon_tab_line_orange">#f39800</color>
+    <color name="lemon_text_bg">#34000000</color>
+    <color name="lemon_top_bg">#FF8808</color>
+    <color name="lemon_transparent">#00000000</color>
+    <color name="lemon_type_color">#676767</color>
+    <color name="lemon_variety_episode_hot_gray">#c9caca</color>
+    <color name="lemon_variety_episode_title_dark">#676767</color>
+    <color name="lemon_variety_episode_title_orange">#f39800</color>
+    <color name="lemon_video_detail_comment_btn_color">#1ea9b0</color>
+    <color name="lemon_video_msg">#71291c1c</color>
+    <color name="lemon_white">#FFFFFF</color>
+    <color name="lemon_white_f">#d4ffffff</color>
+    <color name="lemon_you_text_colorhui">#9fa0a0</color>
+    <color name="lemon_you_text_colorlu">#FF8808</color>
+    <color name="lemon_you_text_colorluhong">#f39800</color>
+    <color name="linear_progress_color">#ff3f51b5</color>
+    <color name="paper_button_color">#ffffffff</color>
+    <color name="paper_button_shadow_color">#000000</color>
+    <color name="paper_text_color">#60000000</color>
+    <color name="radio_checked_color">#55b03d</color>
+    <color name="radio_color">#6d6d6d</color>
+    <color name="slider_color">#ffc8c8c8</color>
+    <color name="slider_ripple_color">#ffd4d4d4</color>
+    <color name="slider_tint_color">#ff3f51b5</color>
+    <color name="switch_thumb_checked_color">#289d4d</color>
+    <color name="switch_thumb_color">#929292</color>
+    <color name="switch_track_checked_color">#2d523e</color>
+    <color name="switch_track_color">#4f4f4f</color>
+    <color name="tab_ripple_color">#000000</color>
+    <color name="tab_text_color">#9FC1FB</color>
+    <color name="tab_text_disabled_color">#000000</color>
+    <color name="tab_text_selected_color">#FFFFFF</color>
+    <color name="tab_underline_color">#283593</color>
+    <color name="track_slider_color">#ffc8c8c8</color>
+    <color name="track_slider_tint_color">#ff3f51b5</color>
+    <color name="venvy_video_buffer_text_color">#ffececec</color>
+    <color name="venvy_video_dg_divider_color">#E9E9E9</color>
+    <color name="venvy_video_dg_item_text_color">#404060</color>
+    <color name="venvy_video_line_color">#78729B</color>
+    <color name="venvy_video_link_color">#ffffff</color>
+    <color name="venvy_video_link_color_up">#f3f3f3</color>
+    <color name="venvy_video_load_bg_color">#BABABA</color>
+    <color name="venvy_video_load_text_color">#666666</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="SlidingTabLayout"><attr name="indicatorColor"/><attr name="dividerColor"/><attr name="bottomLineColor"/><attr name="dividerMargin"/><attr name="indicatorHeight"/><attr name="bottomLineHeight"/><attr name="dividerWidth"/></declare-styleable>
+    <declare-styleable name="StretchPanel"><attr format="reference" name="contentView"/><attr format="reference" name="stretchView"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="VideoJjCofInfo"><attr format="string" name="VideoJjAppKay"/><attr format="string" name="VideoJjPageName"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <declare-styleable name="lemon_ProgressWheel"><attr format="string" name="lemon_text"/><attr format="color" name="lemon_textColor"/><attr format="dimension" name="lemon_textSize"/><attr format="color" name="lemon_barColor"/><attr format="color" name="lemon_rimColor"/><attr format="dimension" name="lemon_rimWidth"/><attr format="dimension" name="lemon_spinSpeed"/><attr format="integer" name="lemon_delayMillis"/><attr format="color" name="lemon_circleColor"/><attr format="dimension" name="lemon_radius"/><attr format="dimension" name="lemon_barWidth"/><attr format="dimension" name="lemon_barLength"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="checkbox_border_width">2dp</dimen>
+    <dimen name="checkbox_corner_radius">2dp</dimen>
+    <dimen name="checkbox_height">48dp</dimen>
+    <dimen name="checkbox_mark_bottom_padding">5dp</dimen>
+    <dimen name="checkbox_mark_left_right_padding">3dp</dimen>
+    <dimen name="checkbox_mark_top_padding">4dp</dimen>
+    <dimen name="checkbox_mark_width">2dp</dimen>
+    <dimen name="checkbox_ripple_radius">24dp</dimen>
+    <dimen name="checkbox_thumb_size">20dp</dimen>
+    <dimen name="checkbox_width">48dp</dimen>
+    <dimen name="circle_button_height">72dp</dimen>
+    <dimen name="circle_button_width">72dp</dimen>
+    <dimen name="circular_progress_border_width">4dp</dimen>
+    <dimen name="circular_progress_large_size">60dp</dimen>
+    <dimen name="circular_progress_normal_size">48dp</dimen>
+    <dimen name="circular_progress_small_size">36dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <dimen name="floating_edit_text_underline_height">1dp</dimen>
+    <dimen name="floating_edit_text_underline_highlighted_height">2dp</dimen>
+    <dimen name="lemon_activity_horizontal_margin">16dp</dimen>
+    <dimen name="lemon_activity_vertical_margin">16dp</dimen>
+    <dimen name="lemon_anniu_index_size">16sp</dimen>
+    <dimen name="lemon_arrow_size">19dp</dimen>
+    <dimen name="lemon_banner_focus_buttom">3dp</dimen>
+    <dimen name="lemon_banner_hig">170dp</dimen>
+    <dimen name="lemon_buy_button_padding">10dp</dimen>
+    <dimen name="lemon_buy_button_padding_horizen">30dp</dimen>
+    <dimen name="lemon_buy_button_size">15sp</dimen>
+    <dimen name="lemon_buy_line_margin">5dp</dimen>
+    <dimen name="lemon_buy_margin_top">20dp</dimen>
+    <dimen name="lemon_buy_tip_size">18sp</dimen>
+    <dimen name="lemon_camera_but_size">140dp</dimen>
+    <dimen name="lemon_camera_but_size1">120dp</dimen>
+    <dimen name="lemon_camera_but_text_size">15sp</dimen>
+    <dimen name="lemon_comment_content_size">13sp</dimen>
+    <dimen name="lemon_comment_height">30dp</dimen>
+    <dimen name="lemon_comment_padding_bottom">5dp</dimen>
+    <dimen name="lemon_comment_size">11sp</dimen>
+    <dimen name="lemon_commenter_size">14sp</dimen>
+    <dimen name="lemon_count_size">13sp</dimen>
+    <dimen name="lemon_drawable_padding">5dp</dimen>
+    <dimen name="lemon_episode_image_height">60dp</dimen>
+    <dimen name="lemon_episode_image_width">100dp</dimen>
+    <dimen name="lemon_episode_index_size">18sp</dimen>
+    <dimen name="lemon_episode_item_height">70dp</dimen>
+    <dimen name="lemon_error_left">18dp</dimen>
+    <dimen name="lemon_error_size">22sp</dimen>
+    <dimen name="lemon_error_top">90dp</dimen>
+    <dimen name="lemon_error_tops">20dp</dimen>
+    <dimen name="lemon_fab_margin">5dp</dimen>
+    <dimen name="lemon_fab_margin2">0dp</dimen>
+    <dimen name="lemon_feedbock_size_Bottom">20dp</dimen>
+    <dimen name="lemon_feedbock_size_Bt_padd">10dp</dimen>
+    <dimen name="lemon_feedbock_size_Bt_top">60dp</dimen>
+    <dimen name="lemon_feedbock_size_bt">15sp</dimen>
+    <dimen name="lemon_feedbock_size_ed_hi">35dp</dimen>
+    <dimen name="lemon_feedbock_size_ed_wi">180dp</dimen>
+    <dimen name="lemon_feedbock_size_pann">15dp</dimen>
+    <dimen name="lemon_feedbock_size_top">20dp</dimen>
+    <dimen name="lemon_funny_maylike_item_image_height">90dp</dimen>
+    <dimen name="lemon_funny_maylike_item_image_width">167dp</dimen>
+    <dimen name="lemon_funny_maylike_item_width">267dp</dimen>
+    <dimen name="lemon_header_footer_left_right_padding">24dp</dimen>
+    <dimen name="lemon_header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="lemon_high">50dp</dimen>
+    <dimen name="lemon_image_gap">5dp</dimen>
+    <dimen name="lemon_image_height">165dp</dimen>
+    <dimen name="lemon_indicator_corner_radius">12dp</dimen>
+    <dimen name="lemon_indicator_internal_padding">4dp</dimen>
+    <dimen name="lemon_indicator_right_padding">10dp</dimen>
+    <dimen name="lemon_intro_margin_top">8dp</dimen>
+    <dimen name="lemon_intro_size">14sp</dimen>
+    <dimen name="lemon_item_watch_record_LL_width">160dp</dimen>
+    <dimen name="lemon_item_watch_record_gao">120dp</dimen>
+    <dimen name="lemon_item_watch_record_height">120dp</dimen>
+    <dimen name="lemon_item_watch_record_iv_height">100dp</dimen>
+    <dimen name="lemon_item_watch_record_iv_mleft">10dp</dimen>
+    <dimen name="lemon_item_watch_record_iv_width">80dp</dimen>
+    <dimen name="lemon_item_watch_record_ll_height">100dp</dimen>
+    <dimen name="lemon_item_watch_record_ll_ll_Top">6dp</dimen>
+    <dimen name="lemon_item_watch_record_ll_ll_height">14dp</dimen>
+    <dimen name="lemon_item_watch_record_ll_tv_marginRight">20dp</dimen>
+    <dimen name="lemon_item_watch_record_ll_tv_size">11sp</dimen>
+    <dimen name="lemon_item_watch_record_width">280dp</dimen>
+    <dimen name="lemon_iv_rig_more_size">17dp</dimen>
+    <dimen name="lemon_iv_top_left_size">18dp</dimen>
+    <dimen name="lemon_iv_top_rig_size">27dp</dimen>
+    <dimen name="lemon_iv_type_size">30dp</dimen>
+    <dimen name="lemon_live_img_h">75dp</dimen>
+    <dimen name="lemon_live_img_w">125dp</dimen>
+    <dimen name="lemon_live_main_img_h">120dp</dimen>
+    <dimen name="lemon_live_sur">190dp</dimen>
+    <dimen name="lemon_live_sur_h">240dp</dimen>
+    <dimen name="lemon_livetv_top_height">50dp</dimen>
+    <dimen name="lemon_livetv_top_title_size">18sp</dimen>
+    <dimen name="lemon_maylike_item_image_height">140dp</dimen>
+    <dimen name="lemon_maylike_item_image_width">110dp</dimen>
+    <dimen name="lemon_maylike_item_padding">5dp</dimen>
+    <dimen name="lemon_maylike_item_size">12sp</dimen>
+    <dimen name="lemon_maylike_item_text_height">30dp</dimen>
+    <dimen name="lemon_menu_size">15sp</dimen>
+    <dimen name="lemon_menu_top">3dp</dimen>
+    <dimen name="lemon_more_item_top">10dp</dimen>
+    <dimen name="lemon_movie_intro_title_height">40dp</dimen>
+    <dimen name="lemon_movie_msg_size">14sp</dimen>
+    <dimen name="lemon_movie_name_size">17sp</dimen>
+    <dimen name="lemon_movie_prive">19sp</dimen>
+    <dimen name="lemon_movie_top">15dp</dimen>
+    <dimen name="lemon_not_what_ll_tv_hight">150dp</dimen>
+    <dimen name="lemon_not_what_ll_tv_maight">40dp</dimen>
+    <dimen name="lemon_not_what_ll_tv_textSize">15sp</dimen>
+    <dimen name="lemon_not_what_ll_tv_wight">150dp</dimen>
+    <dimen name="lemon_open_imview_dara_hi">90dp</dimen>
+    <dimen name="lemon_open_imview_dara_wi">117dp</dimen>
+    <dimen name="lemon_open_imview_hi">90dp</dimen>
+    <dimen name="lemon_open_imview_my_top">30dp</dimen>
+    <dimen name="lemon_open_imview_my_top2">50dp</dimen>
+    <dimen name="lemon_open_vip_hi">80dp</dimen>
+    <dimen name="lemon_open_vip_hi_Extra">8dp</dimen>
+    <dimen name="lemon_open_vip_hi_left">5dp</dimen>
+    <dimen name="lemon_open_vip_hi_margin">10dp</dimen>
+    <dimen name="lemon_open_vip_hi_padd">20dp</dimen>
+    <dimen name="lemon_open_vip_tv_dara">15sp</dimen>
+    <dimen name="lemon_open_vip_tv_size">13sp</dimen>
+    <dimen name="lemon_open_vipjixudingzhi_dara">18sp</dimen>
+    <dimen name="lemon_pay_but_size">45dp</dimen>
+    <dimen name="lemon_pay_logo_size">30dp</dimen>
+    <dimen name="lemon_pay_msg_size">16sp</dimen>
+    <dimen name="lemon_pay_tv_heji">13sp</dimen>
+    <dimen name="lemon_pay_tv_ma_top">90dp</dimen>
+    <dimen name="lemon_pay_tv_maleft">25dp</dimen>
+    <dimen name="lemon_pay_tv_sz">12sp</dimen>
+    <dimen name="lemon_play_heigth">230dp</dimen>
+    <dimen name="lemon_private_custom_dianji_left">15dp</dimen>
+    <dimen name="lemon_private_custom_dianji_size">11sp</dimen>
+    <dimen name="lemon_private_custom_hi">45dp</dimen>
+    <dimen name="lemon_private_custom_tv_size">18sp</dimen>
+    <dimen name="lemon_private_custom_wi">0dp</dimen>
+    <dimen name="lemon_private_search_ed_size">14sp</dimen>
+    <dimen name="lemon_private_search_left">36dp</dimen>
+    <dimen name="lemon_private_search_left2">10dp</dimen>
+    <dimen name="lemon_private_search_tv_height">20dp</dimen>
+    <dimen name="lemon_private_search_tv_left">15dp</dimen>
+    <dimen name="lemon_private_search_tv_left_bottom">2dp</dimen>
+    <dimen name="lemon_private_search_tv_left_top">2dp</dimen>
+    <dimen name="lemon_private_search_tv_size">12sp</dimen>
+    <dimen name="lemon_private_search_tv_top">20dp</dimen>
+    <dimen name="lemon_private_search_tv_width">62.5dp</dimen>
+    <dimen name="lemon_quality_textsize">15sp</dimen>
+    <dimen name="lemon_search_content_movies_ll_ed_contont_height">120dp</dimen>
+    <dimen name="lemon_search_content_movies_ll_editText_height">50dp</dimen>
+    <dimen name="lemon_search_content_movies_ll_height">170dp</dimen>
+    <dimen name="lemon_search_content_movies_name">15dp</dimen>
+    <dimen name="lemon_search_content_movies_size">40dp</dimen>
+    <dimen name="lemon_search_content_movies_textsize">16sp</dimen>
+    <dimen name="lemon_search_content_movies_tishi_textsize">13sp</dimen>
+    <dimen name="lemon_search_content_movies_topsize">10dp</dimen>
+    <dimen name="lemon_search_top">35dp</dimen>
+    <dimen name="lemon_search_tv_heji">18sp</dimen>
+    <dimen name="lemon_search_tv_top">10dp</dimen>
+    <dimen name="lemon_skin_bug_height">45dp</dimen>
+    <dimen name="lemon_skin_text_size">15sp</dimen>
+    <dimen name="lemon_sub_title_margin_side">8dp</dimen>
+    <dimen name="lemon_sub_title_size">16sp</dimen>
+    <dimen name="lemon_talk_padding_left">18dp</dimen>
+    <dimen name="lemon_to_back">60dp</dimen>
+    <dimen name="lemon_top_function_rig">10dp</dimen>
+    <dimen name="lemon_top_title__back_left">15dp</dimen>
+    <dimen name="lemon_top_title_size">18sp</dimen>
+    <dimen name="lemon_type_size">14sp</dimen>
+    <dimen name="lemon_type_size2">12sp</dimen>
+    <dimen name="lemon_type_text_size">15sp</dimen>
+    <dimen name="lemon_type_text_top">5dp</dimen>
+    <dimen name="lemon_type_title_hig">25dp</dimen>
+    <dimen name="lemon_type_title_left">8dp</dimen>
+    <dimen name="lemon_type_top">7dp</dimen>
+    <dimen name="lemon_variety_episode_hot_sz">13sp</dimen>
+    <dimen name="lemon_variety_episode_title_sz">13sp</dimen>
+    <dimen name="lemon_variety_padding_5dp">5dp</dimen>
+    <dimen name="lemon_video_height">200dp</dimen>
+    <dimen name="lemon_video_jiaobiao">42dp</dimen>
+    <dimen name="lemon_video_msg_size">11sp</dimen>
+    <dimen name="lemon_video_recording_high">50dp</dimen>
+    <dimen name="lemon_video_recording_left">10dp</dimen>
+    <dimen name="lemon_video_recording_spacing">8dp</dimen>
+    <dimen name="lemon_video_recording_textsize">15sp</dimen>
+    <dimen name="lemon_video_recording_top">21dp</dimen>
+    <dimen name="lemon_video_size">18sp</dimen>
+    <dimen name="lemon_video_text_top">7dp</dimen>
+    <dimen name="lemon_vip_function_hig">230dp</dimen>
+    <dimen name="lemon_vip_function_rig">50dp</dimen>
+    <dimen name="lemon_vipactivity_top_10">5dp</dimen>
+    <dimen name="lemon_vipactivity_top_15">7dp</dimen>
+    <dimen name="lemon_vipactivity_top_16">10dp</dimen>
+    <dimen name="lemon_vipactivity_top_20">10dp</dimen>
+    <dimen name="lemon_vipactivity_top_3">3dp</dimen>
+    <dimen name="lemon_vipactivity_top_30">20dp</dimen>
+    <dimen name="lemon_watch_record_hi">70dp</dimen>
+    <dimen name="lemon_watch_record_ll_hi">100dp</dimen>
+    <dimen name="lemon_watch_record_wi">90dp</dimen>
+    <dimen name="lemon_watch_the_record_top">18sp</dimen>
+    <dimen name="lemon_you_may_like_item_height">170dp</dimen>
+    <dimen name="lemon_zhuce_wi">100dp</dimen>
+    <dimen name="linear_progress_line_width">4dp</dimen>
+    <dimen name="paper_button_corner_radius">2dp</dimen>
+    <dimen name="paper_padding">7dp</dimen>
+    <dimen name="paper_text_size">15sp</dimen>
+    <dimen name="radio_border_radius">10dp</dimen>
+    <dimen name="radio_height">48dp</dimen>
+    <dimen name="radio_ripple_radius">24dp</dimen>
+    <dimen name="radio_stroke_width">2dp</dimen>
+    <dimen name="radio_thumb_radius">6dp</dimen>
+    <dimen name="radio_width">48dp</dimen>
+    <dimen name="slider_bar_height">2dp</dimen>
+    <dimen name="slider_thumb_border_width">2dp</dimen>
+    <dimen name="slider_thumb_radius">10dp</dimen>
+    <dimen name="slider_thumb_ripple_radius">30dp</dimen>
+    <dimen name="switch_height">48dp</dimen>
+    <dimen name="switch_ripple_max_radius">24dp</dimen>
+    <dimen name="switch_stroke_width">2dp</dimen>
+    <dimen name="switch_thumb_radius">10dp</dimen>
+    <dimen name="switch_track_width">2dp</dimen>
+    <dimen name="switch_width">86dp</dimen>
+    <dimen name="tab_nav_button_width">36dp</dimen>
+    <dimen name="tab_text_size">15sp</dimen>
+    <dimen name="tab_underline_height">5dp</dimen>
+    <dimen name="track_slider_bar_height">2dp</dimen>
+    <dimen name="track_slider_ripple_radius">20dp</dimen>
+    <dimen name="track_slider_thumb_radius">10dp</dimen>
+    <dimen name="venvy_video_des_item_text_size">14dp</dimen>
+    <dimen name="venvy_video_des_size">13dp</dimen>
+    <dimen name="venvy_video_dg_padding">50dp</dimen>
+    <dimen name="venvy_video_info_text_size">18dp</dimen>
+    <dimen name="venvy_video_load_text_size">16dp</dimen>
+    <dimen name="venvy_video_quality_text_size">15dp</dimen>
+    <dimen name="venvy_video_sdk_panel_height">48dp</dimen>
+    <dimen name="venvy_video_title_size">16dp</dimen>
+    <dimen name="venvy_video_title_text_size">16dp</dimen>
+    <item name="gridview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="webview" type="id"/>
+    <integer name="circular_progress_max">100</integer>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <integer name="lemon_max_lines">3</integer>
+    <integer name="linear_progress_max">100</integer>
+    <integer name="tab_max_column">4</integer>
+    <string name="lemon_Select">全选</string>
+    <string name="lemon_add_movie_talk">发表</string>
+    <string name="lemon_back">返回</string>
+    <string name="lemon_bu">已到底部</string>
+    <string name="lemon_but_submit">提交</string>
+    <string name="lemon_buy_now">立即购买</string>
+    <string name="lemon_buy_video_er_recording">暂时还没有购买记录，赶紧去购买吧~</string>
+    <string name="lemon_buy_video_recording">购买记录</string>
+    <string name="lemon_buy_video_tip">试看结束,此片需要购买才可观看</string>
+    <string name="lemon_caijin">财经</string>
+    <string name="lemon_camera_but">按住拍</string>
+    <string name="lemon_camera_t">上滑取消</string>
+    <string name="lemon_cancel">取消</string>
+    <string name="lemon_cannot_play_error">播放出错啦,换个片子吧...</string>
+    <string name="lemon_change_url">切换线路</string>
+    <string name="lemon_comment">评论</string>
+    <string name="lemon_comment_empty">请输入要说的话</string>
+    <string name="lemon_comment_failed">评论失败</string>
+    <string name="lemon_comment_hint">我来说几句</string>
+    <string name="lemon_comment_success">评论成功</string>
+    <string name="lemon_content_msg">视频描述不能为空</string>
+    <string name="lemon_continue_play">继续播放</string>
+    <string name="lemon_custom_made">我要求片</string>
+    <string name="lemon_customize_tip">您求片申请的影片已提交成功,小二会在48小时内给您短信回复。</string>
+    <string name="lemon_delete">删除</string>
+    <string name="lemon_dingzhi_denglu">立即登录</string>
+    <string name="lemon_dingzhi_denglu_fuwu">求片介绍：</string>
+    <string name="lemon_dingzhi_denglu_fuwu_neirong">我要求片是本平台给用户提供的个人求片功能，在影片库中搜索不到的影片，我们将通过人工方式帮你搜寻该影片资源（势必翻转整个地球），并实现一对一推送观看。</string>
+    <string name="lemon_dingzhi_denglu_quxiao">取消</string>
+    <string name="lemon_dingzhi_denglu_tishi">检查到您当前还未登录，求片需要登录后才可使用哦！</string>
+    <string name="lemon_dingzhi_fuwu">求片介绍：</string>
+    <string name="lemon_dingzhi_putong">该服务是柠檬看客针对会员用户提供的增值服务，在影片库中搜索不到的影片，可通过我要求片向我们求片，我们将尽力帮您寻找片源，并进行人工一对一推送。</string>
+    <string name="lemon_dingzhi_queren_fuwu">为方便精准推送，请再次输入正确片名及影片相关信息</string>
+    <string name="lemon_dingzhi_queren_fuwu2">为精准搜寻影片，请输入影片相关信息,如上映时间、演员、版本等</string>
+    <string name="lemon_dingzhi_tishi">求片提示</string>
+    <string name="lemon_dingzhi_tishi_fuwu_neirong1">全国只有2%的人知道这个求片功能，您真幸运呢~</string>
+    <string name="lemon_dingzhi_tishi_fuwu_neirong2">PS：求片成功的影片只能观看5分钟哦~</string>
+    <string name="lemon_dingzhi_tishi_fuwu_neirong3"> 如觉得影片很赞，想继续观看的话，需打赏2元给小二作为辛苦费噢~（翻箱倒柜的找资源，小二也不容易啊~）</string>
+    <string name="lemon_dingzhi_vip_tishi"> 尊敬的用户，本功能服务仅对会员开放哦，如需使用我要求片，请先开通会员！</string>
+    <string name="lemon_donghua">动画</string>
+    <string name="lemon_episode_choose">剧集</string>
+    <string name="lemon_episodes">剧集</string>
+    <string name="lemon_error1">糟糕！！好像出错了</string>
+    <string name="lemon_error2">1、网络信号弱</string>
+    <string name="lemon_error3">2、找不到服务器</string>
+    <string name="lemon_error4">3、找不到页面</string>
+    <string name="lemon_error_feedback">问题反馈</string>
+    <string name="lemon_error_title">可能原因：</string>
+    <string name="lemon_feed_tishi">有什么牢骚，吐槽，欢迎砸来，小二会揪着攻城狮努力改进哒~</string>
+    <string name="lemon_feedback">  反馈  </string>
+    <string name="lemon_free_watch_tip">免费试看前5分钟,观看完整视频请</string>
+    <string name="lemon_function">编辑</string>
+    <string name="lemon_gaoxiao">搞笑</string>
+    <string name="lemon_get_it">知道了</string>
+    <string name="lemon_get_jixuqiupian">继续求片</string>
+    <string name="lemon_get_neirong_null">搜索内容不能为空</string>
+    <string name="lemon_get_qusousuo">去搜索</string>
+    <string name="lemon_get_zaiciqueren">再次确认</string>
+    <string name="lemon_hint">提示</string>
+    <string name="lemon_hot_comment">热门评论</string>
+    <string name="lemon_hot_tv">热门剧场</string>
+    <string name="lemon_is_positive">确定</string>
+    <string name="lemon_jilupian">记录片</string>
+    <string name="lemon_kongbai">空空如也，什么都没有</string>
+    <string name="lemon_listview_load">正在努力加载中.....</string>
+    <string name="lemon_live">直播</string>
+    <string name="lemon_live_name">LIVE热播</string>
+    <string name="lemon_livetv_name">电视直播</string>
+    <string name="lemon_load_text">小柠正在努力加载中</string>
+    <string name="lemon_loading_data">加载数据中...</string>
+    <string name="lemon_login_hot_msg">热门剧场获取失败</string>
+    <string name="lemon_login_msg">登陆失败,用户信息有误</string>
+    <string name="lemon_login_tip">请先登录</string>
+    <string name="lemon_lvse">绿色</string>
+    <string name="lemon_lvyou">旅游</string>
+    <string name="lemon_main_title">社区影院</string>
+    <string name="lemon_mingxi">明星</string>
+    <string name="lemon_more">更多</string>
+    <string name="lemon_more_loading">加载更多.....</string>
+    <string name="lemon_mores">更多</string>
+    <string name="lemon_movie">免费大片</string>
+    <string name="lemon_movie_Starring">主演:</string>
+    <string name="lemon_movie_director">导演:</string>
+    <string name="lemon_movie_prive">¥0.0 元</string>
+    <string name="lemon_movie_zone">影视圈</string>
+    <string name="lemon_msg">填写视频标题,不超过15个字符</string>
+    <string name="lemon_msg_t">视频描述,不超过225个字符</string>
+    <string name="lemon_msg_title">视频标题</string>
+    <string name="lemon_net_error">网络错误</string>
+    <string name="lemon_network_error">请检查您的手机网络</string>
+    <string name="lemon_no_more_data">没有更多了</string>
+    <string name="lemon_no_more_date">没有更多评论</string>
+    <string name="lemon_not_wifi_tip">当前使用的是非wifi网络,继续播放将会产生流量费用。</string>
+    <string name="lemon_open_vip_fuwu">会员服务介绍：</string>
+    <string name="lemon_open_vip_gaoji">2.包月会员，收费%1$s元，自开通起1个月内可免费观看所有VIP影片（无数量限制）</string>
+    <string name="lemon_open_vip_neirong">开通会员可观看更多VIP影片。</string>
+    <string name="lemon_open_vip_openputong">开通会员</string>
+    <string name="lemon_open_vip_putong">1.包天会员，收费%1$s元，自开通起24小时内可免费观看所有VIP影片（无数量限制）</string>
+    <string name="lemon_open_vip_tishi">尊敬的用户，检测到你当前还未开通视频会员功能，如需观看更多精彩内容，请先开通会员功能哦。</string>
+    <string name="lemon_pay">支付</string>
+    <string name="lemon_pay_banyuan">¥120元</string>
+    <string name="lemon_pay_dangtian">购买包天,当天付费影片随便看</string>
+    <string name="lemon_pay_dingzhi">我要求片服务/次</string>
+    <string name="lemon_pay_error">订单生成失败，请稍后再试</string>
+    <string name="lemon_pay_error2">启动支付页面失败</string>
+    <string name="lemon_pay_for_custom_tip">本片您已定制,尚未付费</string>
+    <string name="lemon_pay_for_customize">去付费</string>
+    <string name="lemon_pay_for_day">3元包日</string>
+    <string name="lemon_pay_for_serials">5元购买单部</string>
+    <string name="lemon_pay_for_single">一元购买单片</string>
+    <string name="lemon_pay_heji">合计支付</string>
+    <string name="lemon_pay_liuyue">6个月</string>
+    <string name="lemon_pay_liuyue_suibian">购买六个月,六个月内付费影片随便看，</string>
+    <string name="lemon_pay_liuyue_zengsong">并赠送PPTV会员六个月</string>
+    <string name="lemon_pay_method">支付方式</string>
+    <string name="lemon_pay_movie_msg">支付后影片永久免费观看</string>
+    <string name="lemon_pay_nian">¥180元</string>
+    <string name="lemon_pay_one">一次</string>
+    <string name="lemon_pay_pptvyiyue">并赠送PPTV会员一个月</string>
+    <string name="lemon_pay_sanyuan">¥2元</string>
+    <string name="lemon_pay_suibian">购买一个月,一个月内付费影片随便看，</string>
+    <string name="lemon_pay_vip">VIP套餐</string>
+    <string name="lemon_pay_wx">微信支付</string>
+    <string name="lemon_pay_xieyi">服务协议</string>
+    <string name="lemon_pay_yici">成功求片一次</string>
+    <string name="lemon_pay_yinian">1年</string>
+    <string name="lemon_pay_yinian_baonian">并赠送PPTV会员一年</string>
+    <string name="lemon_pay_yinian_suibian">购买包年,全年内付费影片随便看，</string>
+    <string name="lemon_pay_yitian">1天</string>
+    <string name="lemon_pay_yiyuan">¥2元</string>
+    <string name="lemon_pay_yiyue">1个月</string>
+    <string name="lemon_pay_yueyuan">¥24元</string>
+    <string name="lemon_pay_zfb">支付宝支付</string>
+    <string name="lemon_pay_zhuce_mima">密码</string>
+    <string name="lemon_pay_zhuce_mima_tishi">填写字母加数字不少于6位</string>
+    <string name="lemon_pay_zhuce_pptv">该影片资源由PPTV提供，您当前还不是PPTV用户，如需使用服务需完成注册。</string>
+    <string name="lemon_pay_zhuce_shoujihao">手机号</string>
+    <string name="lemon_pay_zhuce_shoujihao_hi">默认登录的手机号</string>
+    <string name="lemon_pay_zhuce_shoujihao_yanzheng">验证码</string>
+    <string name="lemon_pay_zhuce_shoujihao_yanzheng_fasong">发送验证码</string>
+    <string name="lemon_pay_zhuce_shoujihao_yanzheng_tianxie">填写验证码</string>
+    <string name="lemon_pay_zhuce_xinxi">个人信息</string>
+    <string name="lemon_pay_zhuce_zhuce">注册</string>
+    <string name="lemon_play_url_empty">播放地址无效</string>
+    <string name="lemon_private_custom_my">我要求片</string>
+    <string name="lemon_published">发表成功</string>
+    <string name="lemon_pull_to_refresh_from_bottom_pull_label">下拉刷新…</string>
+    <string name="lemon_pull_to_refresh_from_bottom_refreshing_label">正在载入…</string>
+    <string name="lemon_pull_to_refresh_from_bottom_release_label">放开以刷新…</string>
+    <string name="lemon_pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="lemon_pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="lemon_pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="lemon_qiche">汽车</string>
+    <string name="lemon_qingzi">少儿</string>
+    <string name="lemon_recommend_name">免费大片</string>
+    <string name="lemon_records_custom">求片记录</string>
+    <string name="lemon_records_my_custom">我要求片</string>
+    <string name="lemon_records_my_custom_dingzhi">正在申请...</string>
+    <string name="lemon_records_my_custom_kefu">联系客服 4007-775-779</string>
+    <string name="lemon_records_my_custom_mianze">免责声明</string>
+    <string name="lemon_records_my_custom_problem">常见问题解答</string>
+    <string name="lemon_records_my_custom_shengming">声明</string>
+    <string name="lemon_redian">热点</string>
+    <string name="lemon_refresh">下拉刷新</string>
+    <string name="lemon_reply">回复</string>
+    <string name="lemon_resoubang">热搜榜</string>
+    <string name="lemon_resoubang_fankui_chuli">小柠会尽快处理</string>
+    <string name="lemon_resoubang_fankui_fanhui">3S后返回</string>
+    <string name="lemon_resoubang_fankui_fankui">反馈已提交</string>
+    <string name="lemon_resoubang_fankui_kong">亲,反馈不能为空哦!</string>
+    <string name="lemon_resoubang_wu">卖噶的...该影片暂时没有上架，试试求片功能吧,小二累死也会帮你搜寻该影片资源，并在第一时间一对一推送给你观看噢</string>
+    <string name="lemon_resoubang_wu_dingzhi">我要求片</string>
+    <string name="lemon_resoubang_wu_dingzhi2">我要\r\n求片</string>
+    <string name="lemon_search_content_add">加载中...</string>
+    <string name="lemon_search_content_delete">删除中...</string>
+    <string name="lemon_search_content_dianji">点击量：</string>
+    <string name="lemon_search_content_dibu">已到底部</string>
+    <string name="lemon_search_content_dingzhi">我的求片</string>
+    <string name="lemon_search_content_guankan">点击观看</string>
+    <string name="lemon_search_content_jianjie_kong">简介内容不能为空</string>
+    <string name="lemon_search_content_jindu">求片状态</string>
+    <string name="lemon_search_content_kan">观看</string>
+    <string name="lemon_search_content_liebiao">影视列表</string>
+    <string name="lemon_search_content_listFragment_prompt">暂时还没有求片记录，赶紧去求片吧~</string>
+    <string name="lemon_search_content_movies_CustomMovies">我要求片</string>
+    <string name="lemon_search_content_movies_determine">提交</string>
+    <string name="lemon_search_content_movies_find">填写您想看的影视信息,小二会尽力为您寻得.....</string>
+    <string name="lemon_search_content_movies_movie">电影</string>
+    <string name="lemon_search_content_movies_name">影视名称：</string>
+    <string name="lemon_search_content_movies_noyingpian">以上没有要找的影片</string>
+    <string name="lemon_search_content_movies_other">其他</string>
+    <string name="lemon_search_content_movies_other_queren">确认求片</string>
+    <string name="lemon_search_content_movies_prompt">温馨提示：</string>
+    <string name="lemon_search_content_movies_prompt1">1.我要求片是本平台给用户提供的个人求片功能，在影片库里没能搜索到的影片，都可以通过我要求片输入影片名进行求片；
+</string>
+    <string name="lemon_search_content_movies_prompt2">2.成功提交求片申请后，我们将在48小时内通过人工方式，第一时间帮您搜寻该影片资源，并实现一对一推送观看，最终的推送结果我们会以短信形式进行通知；
+</string>
+    <string name="lemon_search_content_movies_prompt3">我的求片记录</string>
+    <string name="lemon_search_content_movies_prompt4">4.成功推送的影片自推送起有效期为72小时，收到推送影片的用户记得抓紧时间观看；
+</string>
+    <string name="lemon_search_content_movies_prompt5">5.请注意输入正确的完整片名，例：星球大战7原力觉醒。对于同名或版本过多等影片，请在备注栏填写影片相关信息，方便精准搜索；
+</string>
+    <string name="lemon_search_content_movies_prompt6">6.对于求片需求我们将尽力帮你搜索影片资源，并及时推送，若搜索无果，敬请见谅，另针对违规影片需求，本平台概不受理；
+</string>
+    <string name="lemon_search_content_movies_prompt7">3.求片成功的影片只能试看5分钟，如需继续观看，需支付2元作为搜寻影片资源的服务费；
+</string>
+    <string name="lemon_search_content_movies_prompt8">7.本平台针对用户需求提供影视求片服务，若内容涉及影片版权问题，烦请版权方及时告知我们，我们将及时做出下架处理；
+</string>
+    <string name="lemon_search_content_movies_tishiname">请输入影片名称</string>
+    <string name="lemon_search_content_movies_title_chenggong">提交成功</string>
+    <string name="lemon_search_content_movies_title_content">求片结果</string>
+    <string name="lemon_search_content_movies_tv">电视剧</string>
+    <string name="lemon_search_content_movies_xiangkan">我要求片</string>
+    <string name="lemon_search_content_pianming_kong">片名不能为空</string>
+    <string name="lemon_search_content_quanbuxuan">取消全选</string>
+    <string name="lemon_search_content_quanxuan">全选</string>
+    <string name="lemon_search_content_tijiao_chenggong">求片成功</string>
+    <string name="lemon_search_content_tijiao_content">您的求片申请已提交，</string>
+    <string name="lemon_search_content_tijiao_jixu">继续求片</string>
+    <string name="lemon_search_content_tijiao_shibai">求片失败</string>
+    <string name="lemon_search_content_tijiao_tiaozhuan">3秒后自动跳转到求片记录界面</string>
+    <string name="lemon_search_content_tijiao_xiaohuoban">柠檬的小伙伴们会在24小时内给您回复</string>
+    <string name="lemon_search_content_tijiao_zhong">处理中</string>
+    <string name="lemon_search_content_youxiao">有效期：</string>
+    <string name="lemon_search_ed">爱搜索</string>
+    <string name="lemon_search_goumai">购买方式：</string>
+    <string name="lemon_search_shijian">购买时间：</string>
+    <string name="lemon_search_tishi">以下没有想要的影片，可点击我要求片获取您的专属影片！！！</string>
+    <string name="lemon_search_tv">立即续费</string>
+    <string name="lemon_search_yindao">您还不是会员,点击"立即开通"开通会员吧</string>
+    <string name="lemon_search_youxiao">到期时间：</string>
+    <string name="lemon_sec_msg">渠道号不能为空</string>
+    <string name="lemon_set_failed">操作失败</string>
+    <string name="lemon_sharing_of_fankui">意见反馈</string>
+    <string name="lemon_sharing_of_records">分享记录</string>
+    <string name="lemon_sharing_of_video">个人管理</string>
+    <string name="lemon_shenghuo">生活</string>
+    <string name="lemon_shengming_tv">免责声明：</string>
+    <string name="lemon_shengming_tv1">1、本平台影视资源已取得相关版权方授权，并只提供在线链接播放及搜寻服务，不做存储和保留，如对版权归属问题存有争议，请及时联系我们并提供相应版权证明，我们会在收到反馈24小时内与进行审查核实，一经核实存在版权冲突或归属争议，我们将及时屏蔽相应内容，
+</string>
+    <string name="lemon_shengming_tv2">2、版权问题，商务合作请以邮件形式发送至：lemon@clublemon.com 。</string>
+    <string name="lemon_shengming_tv3">
+3、由于影片资源来自互联网，如涉及到版权问题请相关版权方及时联系我们并提供相应版权证明，我们会在收到反馈24小时内屏蔽相应内容
+        </string>
+    <string name="lemon_shengming_tv4">
+4、版权问题，商务合作请致电0755-82211852，或以邮件形式发送至emon@clublemon.com。
+</string>
+    <string name="lemon_shengming_tv_problem">影片观看中常见问题解答（FAQ）</string>
+    <string name="lemon_shengming_tv_problem_ba_da">答：在影视首页右上角小图标点击选择进入个人管理页面，点击开通会员或直接在观看会员影片时点击开通会员；
+注：开通会员前需注册登录；</string>
+    <string name="lemon_shengming_tv_problem_ba_wen">八、如何开通会员？</string>
+    <string name="lemon_shengming_tv_problem_er_da">答：影视平台暂不支持电影下载或缓存功能（后续会更新下载缓存功能）；</string>
+    <string name="lemon_shengming_tv_problem_er_wen">二、电影可以下载或缓存吗？</string>
+    <string name="lemon_shengming_tv_problem_jiu_da">答：进入个人管理页面，在个人管理页面中会显示当前会员到期时间；</string>
+    <string name="lemon_shengming_tv_problem_jiu_wen">九、如何查询会员到期时间？</string>
+    <string name="lemon_shengming_tv_problem_liu_da">答:我要求片的影片具有时效性，所以我要求片的记录是无法手动删除的，从成功推送时起72小时后系统将会自动删除求片记录；</string>
+    <string name="lemon_shengming_tv_problem_liu_wen">六、我要求片记录怎么删除？</string>
+    <string name="lemon_shengming_tv_problem_qi_da">答：求片成功的影片只能试看5分钟，如需继续观看，需额外打赏2元作为搜寻该影片资源的人工服务费，该服务的收费不与会员服务共享；</string>
+    <string name="lemon_shengming_tv_problem_qi_wen">七、观看我要求片的影片需要收费吗？</string>
+    <string name="lemon_shengming_tv_problem_san_da">答：未注册的用户无法删除播放记录，导致点击删除时系统提示网络异常，如需删除播放记录，请先注册；</string>
+    <string name="lemon_shengming_tv_problem_san_wen">三、为什么点击删除播放记录，提示网络异常？</string>
+    <string name="lemon_shengming_tv_problem_shi_da">答：可以的，假设你的会员到期时间是4月23日16点50分，在16点49分点击开始观看VIP会员影片，只要在观影途中不退出，是能完整看完该部影片的，如果过了有效期后在观影途中退出，是无法重新进入观看的。</string>
+    <string name="lemon_shengming_tv_problem_shi_wen">十、在观影途中恰巧过了会员到期时间还能正常观看吗？</string>
+    <string name="lemon_shengming_tv_problem_si_da">答：我要求片是影视平台提供给用户的一个个人求片功能，在爱搜索没能搜索到的影片，都可以通过我要求片输入影片名进行求片，影视平台将在48小时内通过人工方式，第一时间帮你搜寻该影片资源，并实现一对一推送观看，最终的推送结果我们会以短信形式进行通知，请留意短信！
+</string>
+    <string name="lemon_shengming_tv_problem_si_da2">
+注：使用我要求片功能必须通过注册；成功推送的影片自推送起有效期为72小时，收到推送影片的用户记得抓紧时间观看噢！</string>
+    <string name="lemon_shengming_tv_problem_si_wen">四、什么是我要求片？</string>
+    <string name="lemon_shengming_tv_problem_wu_da">答：成功推送的影片自推送起有效期为72小时，超过有效期72小时，系统将自动删除我要求片影片库里的推送电影，所以收到推送影片的用户记得在72小时之内进行观看噢！</string>
+    <string name="lemon_shengming_tv_problem_wu_wen">五、我要求片已收到成功推送的短信，为什么我要求片影片库里面查询不到
+该部影片？</string>
+    <string name="lemon_shengming_tv_problem_yi_da">答：在影片播放界面的右下方点击【切换线路】按钮，此时会出现“切换成功”提示，此时再点击播放按钮即可正常播放；点击一次切换线路还是无法播放的，可继续点击【切换线路】播放，以此类推！</string>
+    <string name="lemon_shengming_tv_problem_yi_da2">注： 以上方法只针对非网络环境引起的无法播放，在点击【切换线路】时如遇网络延迟，可能需要等待1-5秒，待出现“解析成功”提示后，方才是切换有效；
+如果以上方法还是无法解决影片正常播放，请在在线影院首页进入个人管理页面点击意见反馈给我们留言，我们会在第一时间修复无法播放的影片；留言格式：不能播放+影片名；</string>
+    <string name="lemon_shengming_tv_problem_yi_wen">一、影片出现无法播放或解析异常怎么办？</string>
+    <string name="lemon_shishang">时尚</string>
+    <string name="lemon_special">特色专题</string>
+    <string name="lemon_special_feature">特色专题</string>
+    <string name="lemon_special_feature_jieshao">专题介绍</string>
+    <string name="lemon_sport">体育</string>
+    <string name="lemon_sub_net_error">提交失败，网络异常</string>
+    <string name="lemon_tijiao">提交</string>
+    <string name="lemon_title_msg">标题不能为空</string>
+    <string name="lemon_to_be_vip">开通VIP会员</string>
+    <string name="lemon_to_pay">去支付</string>
+    <string name="lemon_tv">电视剧</string>
+    <string name="lemon_type_name">物业专场</string>
+    <string name="lemon_unconnect_tip">网络未连接,请设置您的网络</string>
+    <string name="lemon_unshelve_tip">此片已下架</string>
+    <string name="lemon_variety">综艺</string>
+    <string name="lemon_video_error_msg">视频错误，请重新拍摄</string>
+    <string name="lemon_video_load_error_tip">加载出错啦,请切换线路观看或提交反馈</string>
+    <string name="lemon_video_msg">视频已下架</string>
+    <string name="lemon_video_msg_r">视频太短请重新拍摄</string>
+    <string name="lemon_video_name">五十度灰</string>
+    <string name="lemon_video_refresh">刷新重试</string>
+    <string name="lemon_video_send">发布视频</string>
+    <string name="lemon_vip">VIP专享</string>
+    <string name="lemon_vip_xieyi_fuwu">尊敬的用户：</string>
+    <string name="lemon_vip_xieyi_fuwu1">1、本协议是您与本平台之间关于会员服务的法律协议。</string>
+    <string name="lemon_vip_xieyi_fuwu2">2、一旦注册开通、使用本平台相关服务及产品，即表示接受协议的各项条件约束。如果您不同意协议的条件，则不能获得使用本产品会员服务的权力。在您开通和使用会员之前，请务必阅读此《协议》，明确会员服务内容、权限及收费标准，任何与《协议》有关的服务内容等都应按本协议的条款而授予您，同时本《协议》亦适用于任何有关本服务的后期更新升级，另开通后会员权限不得进行转赠、租售或另作其他商业用途。</string>
+    <string name="lemon_vip_xieyi_fuwu3">3、对于随本服务一起提供的任何第三方软件及服务（包括第三方插件），您有权选择是否使用，如果您选择使用此类第三方软件或服务，则这些使用权限将受到第三方许可协议的约束，此类协议约束与本平台无关，同时本平台不对任何第三方软件及服务负责。</string>
+    <string name="lemon_watch_the_er_record">暂时还没有观看记录，赶紧去观影吧~</string>
+    <string name="lemon_watch_the_record">观看记录</string>
+    <string name="lemon_wu_xiaoqu_name">物业家园</string>
+    <string name="lemon_wuye">物业电视台</string>
+    <string name="lemon_wuye_error_msg">物业视频获取失败</string>
+    <string name="lemon_yingshisousuo">影片名/主演/导演</string>
+    <string name="lemon_yinyue">音乐</string>
+    <string name="lemon_yiyuan">2元看片</string>
+    <string name="lemon_yiyuanqu">一元区</string>
+    <string name="lemon_you_may_like">猜您喜欢</string>
+    <string name="lemon_youxi">游戏</string>
+    <string name="lemon_yuanchang">原创</string>
+    <string name="lemon_zan_cancel">已取消赞</string>
+    <string name="lemon_zan_success">赞成功</string>
+    <string name="nullstring"/>
+    <string name="record_camera_progress_message">正在转码…</string>
+    <string name="record_video_transcoding_faild">视频转码失败</string>
+    <string name="sdk_video_close_gesture_string">手势已关闭</string>
+    <string name="sdk_video_connect_loading_text">加载数据中...</string>
+    <string name="sdk_video_connect_server_text">连接服务器中...</string>
+    <string name="sdk_video_invalid_address_string">视频地址无效</string>
+    <string name="sdk_video_more_gestures_ban_string">手势禁止</string>
+    <string name="sdk_video_more_gestures_open_string">手势开启</string>
+    <string name="sdk_video_more_state_string">手势说明</string>
+    <string name="sdk_video_open_gesture_string">手势已开启</string>
+    <string name="sdk_video_quality_1080_string">1080P</string>
+    <string name="sdk_video_quality_720_string">720P</string>
+    <string name="sdk_video_quality_hd_string">高清</string>
+    <string name="sdk_video_quality_sd_string">标清</string>
+    <string name="sdk_video_quality_smooth_string">流畅</string>
+    <string name="sdk_video_quality_speed_string">极速</string>
+    <string name="sdk_video_quality_super_hd_string">超清</string>
+    <string name="sdk_video_scale_16_9_string">16:9</string>
+    <string name="sdk_video_scale_4_3_string">4:3</string>
+    <string name="sdk_video_scale_default_string">默认</string>
+    <string name="sdk_video_screen_locked_string">屏幕已锁定</string>
+    <string name="sdk_video_screen_unlocked_string">屏幕锁定已解除</string>
+    <style name="AppStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/lemon_you_text_colorlu</item>
+        <!--工具栏样式样式-->
+        <item name="android:colorPrimaryDark">@color/lemon_top_bg</item>
+        <item name="android:colorControlNormal">@color/lemon_top_bg</item>
+    </style>
+    <style name="AppVideoStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/lemon_you_text_colorlu</item>
+        <!--工具栏样式样式-->
+       <item name="android:colorPrimaryDark">@color/lemon_black</item>
+        <item name="android:colorControlNormal">@color/lemon_top_bg</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <!-- <item name="android:windowIsTranslucent">true</item>
+         <item name="android:windowContentOverlay">@null</item>
+         <item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:windowBackground">@drawable/lemon_dialog_bg</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="NoTitleTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Widget">
+    </style>
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="lemon_horizen_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:background">@color/lemon_record_line</item>
+    </style>
+    <style name="lemon_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:background">@color/lemon_record_line</item>
+    </style>
+    <style name="lemon_main_video_msg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_video_msg_size</item>
+        <item name="android:textColor">@color/lemon_white</item>
+        <item name="android:layout_marginTop">@dimen/lemon_video_text_top</item>
+    </style>
+    <style name="lemon_movie_intro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/lemon_intro_size</item>
+        <item name="android:textColor">@color/lemon_movie_intro</item>
+    </style>
+    <style name="lemon_record_rl_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lemon_video_recording_high</item>
+        <item name="android:background">@color/lemon_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/lemon_video_recording_left</item>
+        <item name="android:paddingRight">@dimen/lemon_video_recording_left</item>
+    </style>
+    <style name="lemon_side_title_line">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">@dimen/lemon_type_title_hig</item>
+        <item name="android:background">@color/lemon_top_bg</item>
+        <item name="android:layout_marginLeft">@dimen/lemon_type_title_left</item>
+    </style>
+    <style name="lemon_sub_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/lemon_movie_intro_title_height</item>
+        <item name="android:layout_marginLeft">@dimen/lemon_sub_title_margin_side</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/lemon_sub_title_size</item>
+        <item name="android:textColor">@color/lemon_sub_title</item>
+    </style>
+    <style name="lemon_top_function_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_type_text_size</item>
+        <item name="android:textColor">@color/lemon_white</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">@dimen/lemon_fab_margin</item>
+    </style>
+    <style name="lemon_watch_the_record_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/lemon_video_recording_textsize</item>
+        <item name="android:textColor">@color/lemon_record_tv</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/lemon_video_recording_spacing</item>
+    </style>
+    <style name="lemon_watch_the_record_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/lemon_video_recording_left</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/lemon_gengduo</item>
+    </style>
+    <style name="main_type_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_type_size</item>
+        <item name="android:textColor">@color/lemon_type_color</item>
+        <item name="android:layout_marginTop">@dimen/lemon_type_text_top</item>
+    </style>
+    <style name="main_type_text2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_type_size2</item>
+        <item name="android:textColor">@color/lemon_type_color</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+    <style name="main_video_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_video_size</item>
+        <item name="android:textColor">@color/lemon_type_color</item>
+        <item name="android:layout_marginTop">@dimen/lemon_video_text_top</item>
+    </style>
+    <style name="top_function_rig">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_top_title_size</item>
+        <item name="android:textColor">@color/lemon_white</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/lemon_top_function_rig</item>
+    </style>
+    <style name="top_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lemon_top_title_size</item>
+        <item name="android:textColor">@color/lemon_white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="venvy_iva_sdk_dialog_dg" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <style name="venvy_iva_sdk_dialog_dg_style" parent="venvy_iva_sdk_dialog_dg">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="venvy_media_controller_SeekBar_Style" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/venvy_video_sdk_seek_progress_bar_bg</item>
+        <item name="android:indeterminateDrawable">@drawable/venvy_video_sdk_seek_progress_bar_bg
+</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:maxHeight">5dp</item>
+        <item name="android:thumb">@drawable/venvy_video_sdk_media_controller_drag_bg</item>
+        <item name="android:thumbOffset">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:max">1000</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="venvy_media_controller_back_style">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/lemon_msg_bg</item>
+        <item name="android:src">@drawable/venvy_sdk_arrow_left_bg</item>
+    </style>
+    <style name="venvy_media_controller_lock_style" parent="@style/venvy_media_controller_panel_formal_style">
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/venvy_sdk_media_controller_unlock_bg</item>
+    </style>
+    <style name="venvy_media_controller_mass_style" parent="@style/venvy_media_controller_panel_formal_style">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/venvy_video_title_text_size</item>
+    </style>
+    <style name="venvy_media_controller_panel_formal_style">
+        <item name="android:layout_width">@dimen/venvy_video_sdk_panel_height</item>
+        <item name="android:layout_height">@dimen/venvy_video_sdk_panel_height</item>
+    </style>
+    <style name="venvy_media_controller_popup_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/venvy_video_buffer_text_color</item>
+        <item name="android:textSize">@dimen/venvy_video_info_text_size</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="venvy_media_controller_set_more_style" parent="@style/venvy_media_controller_panel_formal_style">
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/venvy_sdk_media_controller_set_more_bg</item>
+    </style>
+    <style name="venvy_media_controller_time_text_Style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">00:00</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="venvy_media_controller_title_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/venvy_video_title_text_size</item>
+    </style>
+    <style name="venvy_video_load_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:lineSpacingExtra">10dp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/venvy_video_load_text_color</item>
+        <item name="android:textSize">@dimen/venvy_video_load_text_size</item>
+    </style>
+    <style name="venvy_video_quality_line_style">
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="venvy_video_quality_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/venvy_video_quality_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="venvy_videojj_style" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+    </style>
+</resources>

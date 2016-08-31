@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lemon_director_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lemon_intro_margin_top">
+        <TextView
+            android:id="@+id/lemon_id"
+            style="@style/lemon_movie_intro"
+            android:layout_marginLeft="@dimen/lemon_sub_title_margin_side"
+            android:text="@string/lemon_movie_director"/>
+
+        <TextView
+            android:id="@+id/lemon_movie_hot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/lemon_sub_title_margin_side"
+            android:drawableLeft="@drawable/lemon_eye"
+            android:drawablePadding="2dp"
+            android:textColor="#c9caca"
+            android:textSize="@dimen/lemon_intro_size"/>
+        <TextView
+            android:id="@+id/lemon_movie_director_tv"
+            style="@style/lemon_movie_intro"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/lemon_movie_hot_tv"
+            android:layout_toRightOf="@id/lemon_id"
+            android:gravity="left"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lemon_starring_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/lemon_sub_title_margin_side"
+        android:layout_marginTop="@dimen/lemon_intro_margin_top"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/lemon_movie_intro"
+            android:layout_marginLeft="@dimen/lemon_sub_title_margin_side"
+            android:text="@string/lemon_movie_Starring"/>
+        <TextView
+            android:id="@+id/lemon_movie_starring_tv"
+            style="@style/lemon_movie_intro"
+            android:gravity="left|center_vertical"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/lemon_divider_line"
+        style="@style/lemon_horizen_line"
+        android:layout_marginLeft="@dimen/lemon_sub_title_margin_side"
+        android:layout_marginTop="@dimen/lemon_intro_margin_top"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/lemon_movie_description_tv"
+        style="@style/lemon_movie_intro"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/lemon_sub_title_margin_side"
+        android:layout_marginRight="@dimen/lemon_sub_title_margin_side"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3dp"
+        android:paddingTop="@dimen/lemon_intro_margin_top"/>
+
+    <View
+        style="@style/lemon_horizen_line"
+        android:layout_marginTop="@dimen/lemon_intro_margin_top"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/lemon_sirendingzhi"
+        layout="@layout/lemon_common_top_back"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg">
+
+        <LinearLayout
+            android:id="@+id/lemon_SegementView_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/lemon_bg"
+            android:orientation="vertical">
+
+            <com.lemon95.lemonvideolib.customization.myview.SegementView
+                android:id="@+id/lemon_SegementView_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></com.lemon95.lemonvideolib.customization.myview.SegementView>
+
+
+            <include
+                android:id="@+id/lemon_fragment_proress_list"
+                layout="@layout/lemon_fragment_list"></include>
+
+            <include
+                android:id="@+id/lemon_fragment_proress_proress"
+                layout="@layout/lemon_fragment_proress"></include>
+        </LinearLayout>
+
+        <include layout="@layout/lemon_content_view"></include>
+
+        <include
+            layout="@layout/lemon_common_load_ma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

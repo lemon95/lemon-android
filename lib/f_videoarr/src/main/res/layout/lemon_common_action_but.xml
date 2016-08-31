@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+   <!-- <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fa_customization_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/lemon_fab_margin"
+        android:src="@drawable/lemon_dinzhi_but2"
+        android:visibility="gone"
+        app:backgroundTint="#fc5144"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="10dp"
+        app:rippleColor="#78ff72c2" />-->
+
+    <Button
+        android:id="@+id/fa_customization_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:textSize="15sp"
+        android:text="@string/lemon_resoubang_wu_dingzhi2"
+        android:textColor="@color/lemon_white_f"
+        android:background="@drawable/lemon_fal_but" />
+
+
+</RelativeLayout>

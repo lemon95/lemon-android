@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/lemon_error"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lemon_error_top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/lemon_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/lemon_top_title__back_left"
+            android:text="@string/lemon_error1"
+            android:textColor="@color/lemon_error_title"
+            android:textSize="@dimen/lemon_error_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/lemon_error_tops"
+            android:text="@string/lemon_error_title"
+            android:layout_marginLeft="@dimen/lemon_more_item_top"
+            android:textColor="@color/lemon_error_title"
+            android:textSize="@dimen/lemon_menu_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/lemon_error_tops"
+            android:text="@string/lemon_error2"
+            android:layout_marginLeft="@dimen/lemon_more_item_top"
+            android:textColor="@color/lemon_error_title"
+            android:textSize="@dimen/lemon_watch_the_record_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/lemon_type_top"
+            android:text="@string/lemon_error3"
+            android:layout_marginLeft="@dimen/lemon_more_item_top"
+            android:textColor="@color/lemon_error_title"
+            android:textSize="@dimen/lemon_watch_the_record_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/lemon_type_top"
+            android:text="@string/lemon_error4"
+            android:layout_marginLeft="@dimen/lemon_more_item_top"
+            android:textColor="@color/lemon_error_title"
+            android:textSize="@dimen/lemon_watch_the_record_top" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

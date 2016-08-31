@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_open_vip_hi"
+        android:layout_marginBottom="@dimen/lemon_open_vip_hi_padd"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_padd"
+        android:background="@color/lemon_open_vip_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+            android:text="@string/lemon_dingzhi_denglu_tishi"
+            android:textColor="@color/lemon_bg"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/lemon_line"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_margin"
+        android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+        android:text="@string/lemon_dingzhi_denglu_fuwu"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_Extra"
+        android:lineSpacingExtra="@dimen/lemon_open_vip_hi_Extra"
+        android:text="@string/lemon_dingzhi_denglu_fuwu_neirong"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lemon_open_vip_hi_padd"
+        android:background="@color/lemon_bg"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lemong_dingzhi_denglu"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lemon_skin_bug_height"
+            android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+            android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+            android:layout_weight="1"
+            android:background="@drawable/lemon_bg_open_vip"
+            android:text="@string/lemon_dingzhi_denglu"
+            android:textColor="@color/lemon_bg"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/lemong_dingzhi_ui_denglu_quxiaoo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lemon_skin_bug_height"
+            android:layout_marginLeft="@dimen/lemon_open_vip_hi_margin"
+            android:layout_marginRight="@dimen/lemon_open_vip_hi_margin"
+            android:layout_weight="1"
+            android:background="@drawable/lemon_bg_open_quxiao_vip"
+            android:text="@string/lemon_dingzhi_denglu_quxiao"
+            android:textColor="@color/lemon_dingzhi_tishi_bg_text_color"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

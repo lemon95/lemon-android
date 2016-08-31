@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zgy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/title_rl"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="@dimen/lemon_livetv_top_height"-->
+            <!--android:background="#1EA9B0">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/lemonlivetv_top_back_ll"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="8dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="18dp"-->
+                    <!--android:layout_height="18dp"-->
+                    <!--android:src="@drawable/icon_fanhui" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/top_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="@string/lemon_livetv_name"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/lemon_livetv_top_title_size" />-->
+        <!--</RelativeLayout>-->
+
+    <include android:id="@+id/title_layout" layout="@layout/lemon_common_top_back"></include>
+
+    <include layout="@layout/lemon_common_load"></include>
+
+    <LinearLayout
+        android:id="@+id/lemon_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:orientation="vertical">
+
+
+        <com.lemon95.lemonvideolib.livetv.slidingtablayout.SlidingTabLayout
+            android:id="@+id/id_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            zgy:bottomLineColor="#AEAEAE"
+            zgy:bottomLineHeight="0dp"
+            zgy:dividerMargin="10dp"
+            zgy:indicatorColor="#f39800"
+            zgy:indicatorHeight="2dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/lemon_line_png" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--<include layout="@layout/lemon_common_action_but" />-->
+</RelativeLayout>

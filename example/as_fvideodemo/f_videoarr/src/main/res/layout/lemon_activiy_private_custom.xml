@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/lemon_common_top_back">
+    </include>
+
+    <View
+        style="@style/lemon_line"
+        android:layout_marginTop="@dimen/lemon_video_recording_top"></View>
+
+    <RelativeLayout
+        android:id="@+id/lemon_custom_video"
+        style="@style/lemon_record_rl_line"
+        >
+
+        <TextView
+            style="@style/lemon_watch_the_record_TextView"
+            android:drawableLeft="@drawable/lemon_my_dingzhi"
+            android:text="@string/lemon_private_custom_my"
+            />
+
+        <ImageView
+            style="@style/lemon_watch_the_record_right"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/lemon_line"
+        ></View>
+
+    <View
+        style="@style/lemon_line"
+        android:layout_marginTop="@dimen/lemon_video_recording_top"></View>
+
+    <RelativeLayout
+        android:id="@+id/lemon_custom_watch"
+        style="@style/lemon_record_rl_line">
+
+        <TextView
+            style="@style/lemon_watch_the_record_TextView"
+            android:drawableLeft="@drawable/lemon_my_jilu"
+            android:text="@string/lemon_records_custom"
+
+            />
+
+        <ImageView
+            style="@style/lemon_watch_the_record_right"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/lemon_line"
+        ></View>
+</LinearLayout>

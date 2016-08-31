@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_bg"
+    tools:context="com.lemon95.lemonvideolib.special.view.SpecialActivity">
+
+    <include
+        android:id="@+id/lemon_in_top"
+        layout="@layout/lemon_common_top_rig_img"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/lemon_high">
+
+        <include layout="@layout/lemon_content_view"></include>
+
+        <include layout="@layout/lemon_common_load"></include>
+
+        <LinearLayout
+            android:id="@+id/lemon_ll_vip_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lemon_bg"
+            android:visibility="gone">
+
+            <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_refresh_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lemon_bg"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="@color/lemon_type_color"
+                ptr:ptrMode="pullFromStart"
+                ptr:ptrRotateDrawableWhilePulling="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--banner部分-->
+                    <include layout="@layout/lemon_common_banner"></include>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_yiyuan_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_type_title_hig"
+                                    android:layout_marginLeft="@dimen/lemon_type_title_left"
+                                    android:src="@drawable/lemon_fenlei" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_wuye"
+                                    android:textSize="@dimen/lemon_type_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_wuye_tv_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textSize="@dimen/lemon_type_text_size" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_wuye_tv_main"></include>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/lemon_type_top"
+                        android:background="@color/lemon_main_line"></View>
+
+                    <LinearLayout
+                        android:id="@+id/lemon_live_main_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon_white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/lemon_type_top">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_type_title_hig"
+                                    android:layout_marginLeft="@dimen/lemon_type_title_left"
+                                    android:src="@drawable/lemon_fenlei" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:text="@string/lemon_wu_xiaoqu_name"
+                                    android:textSize="@dimen/lemon_type_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lemon_wuye_pro_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/lemon_type_top"
+                                android:paddingTop="@dimen/lemon_type_top">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/lemon_mores"
+                                    android:textSize="@dimen/lemon_type_text_size" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/lemon_iv_rig_more_size"
+                                    android:layout_marginLeft="@dimen/lemon_type_top"
+                                    android:layout_marginRight="@dimen/lemon_top_function_rig"
+                                    android:src="@drawable/lemon_gengduo" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/lemon_common_video_wuye_main"></include>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/lemon_common_action_but"></include>
+</RelativeLayout>

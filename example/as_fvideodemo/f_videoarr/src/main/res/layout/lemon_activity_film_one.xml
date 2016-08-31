@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/lemon_vipactivity_top_20"
+        android:background="@color/lemon_main_line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/lemon_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lemon_rb_ll_rt_tian_siren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lemon_more_item_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lemon_more_item_top"
+                        android:text="@string/lemon_pay_dingzhi"
+                        android:textColor="@color/lemon_sub_title"
+                        android:textSize="@dimen/lemon_open_vip_tv_dara"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lemon_more_item_top"
+                    android:layout_marginLeft="@dimen/lemon_more_item_top"
+                    android:layout_marginTop="@dimen/lemon_more_item_top"
+                    android:text="@string/lemon_pay_yici"
+                    android:textColor="@color/lemon_count_gray"
+                    android:textSize="@dimen/lemon_pay_tv_sz"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lemon_rb_rt_tian_siren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/lemon_pay_tv_maleft"
+                android:layout_marginRight="20dp"
+                android:text="@string/lemon_pay_sanyuan"
+                android:textColor="@color/lemon_set_text_color"
+                android:textSize="18sp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lemon_main_line"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/lemon_more_item_top"
+        android:visibility="gone"
+        android:background="@color/lemon_main_line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="@dimen/lemon_more_item_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lemon_pay_method"
+            android:textColor="@color/lemon_count_gray"
+            android:textSize="@dimen/lemon_pay_msg_size"/>
+
+
+        <RadioGroup
+            android:id="@+id/lemon_pay_rg_siren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lemon_more_item_top">
+
+            <RelativeLayout
+                android:id="@+id/lemon_rl_wx_siren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/lemon_rb_wx_id_siren"
+                    android:layout_width="@dimen/lemon_header_footer_left_right_padding"
+                    android:layout_height="@dimen/lemon_header_footer_left_right_padding"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/lemon_radio"
+                    android:button="@null"></RadioButton>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/lemon_pay_logo_size"
+                        android:layout_height="@dimen/lemon_pay_logo_size"
+                        android:src="@drawable/lemon_pay_wxpay"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lemon_more_item_top"
+                        android:text="@string/lemon_pay_wx"
+                        android:textColor="@color/lemon_type_color"
+                        android:textSize="@dimen/lemon_movie_msg_size"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/lemon_more_item_top"
+                android:background="@color/lemon_main_line"
+                android:visibility="gone"></View>
+
+            <RelativeLayout
+                android:id="@+id/lemon_rl_zfb_siren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/lemon_rb_zfb_id_siren"
+                    android:layout_width="@dimen/lemon_header_footer_left_right_padding"
+                    android:layout_height="@dimen/lemon_header_footer_left_right_padding"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/lemon_radio"
+                    android:button="@null"
+                    android:checked="true"></RadioButton>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/lemon_pay_logo_size"
+                        android:layout_height="@dimen/lemon_pay_logo_size"
+                        android:src="@drawable/lemon_pay_zhifbao_logo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lemon_more_item_top"
+                        android:text="@string/lemon_pay_zfb"
+                        android:textColor="@color/lemon_type_color"
+                        android:textSize="@dimen/lemon_open_vip_tv_dara"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/lemon_main_line"></View>
+
+    <Button
+        android:id="@+id/lemon_pay_one_but_siren"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_pay_but_size"
+        android:layout_marginBottom="@dimen/lemon_pay_tv_ma_top"
+        android:layout_marginLeft="@dimen/lemon_more_item_top"
+        android:layout_marginRight="@dimen/lemon_more_item_top"
+        android:layout_marginTop="@dimen/lemon_search_content_movies_size"
+        android:background="@drawable/lemon_common_but_bg"
+        android:text="@string/lemon_to_pay"
+        android:textColor="@color/lemon_white"
+        android:textSize="@dimen/lemon_pay_msg_size"
+        />
+</LinearLayout>

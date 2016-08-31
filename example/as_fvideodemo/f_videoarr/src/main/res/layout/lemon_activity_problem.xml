@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lemon_white"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_yi_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_yi_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_yi_da2"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_er_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_er_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_san_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_san_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_si_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_si_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_si_da2"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_wu_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_wu_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_liu_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_liu_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_qi_wen"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/lemon_shengming_tv_problem_qi_da"
+                android:textColor="@color/lemon_movie_intro"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

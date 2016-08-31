@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/lemon_video_image"
+        android:layout_width="@dimen/lemon_funny_maylike_item_image_width"
+        android:layout_height="@dimen/lemon_funny_maylike_item_image_height"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/lemon_video_defr"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lemon_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="@integer/lemon_max_lines"
+            android:text="..."
+            android:textColor="@color/lemon_variety_episode_title_dark"
+            android:textSize="@dimen/lemon_variety_episode_title_sz"/>
+
+        <TextView
+            android:id="@+id/lemon_video_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/lemon_main_dianjiliang"
+            android:drawablePadding="@dimen/lemon_drawable_padding"
+            android:singleLine="true"
+            android:text="888"
+            android:textColor="@color/lemon_variety_episode_hot_gray"
+            android:textSize="@dimen/lemon_variety_episode_hot_sz"/>
+    </LinearLayout>
+
+</LinearLayout>

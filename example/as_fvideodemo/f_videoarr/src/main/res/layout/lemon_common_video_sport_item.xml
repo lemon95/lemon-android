@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.lemon95.lemonvideolib.common.myview.MyGridView
+        android:id="@+id/lemon_main_gv_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/lemon_image_gap"
+        android:verticalSpacing="@dimen/lemon_image_gap"
+        android:layout_marginLeft="@dimen/lemon_type_title_left"
+        android:layout_marginRight="@dimen/lemon_type_title_left"
+        android:listSelector="@color/lemon_white"
+        android:numColumns="2"></com.lemon95.lemonvideolib.common.myview.MyGridView>
+
+</LinearLayout>

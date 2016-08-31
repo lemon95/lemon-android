@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lemon_ll_load_anim"
+    android:gravity="bottom"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/lemon_iv_load_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@anim/lemon_load" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lemon_video_text_top"
+        android:text="@string/lemon_load_text"
+        android:visibility="gone"
+        android:textColor="@color/lemon_type_color"
+        android:textSize="@dimen/lemon_type_size" />
+
+</LinearLayout>

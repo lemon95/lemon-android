@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/lemon_item_watch_record_height"
+              android:background="@color/lemon_white"
+              android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/lemon_private_custom_wi"
+        android:layout_height="@dimen/lemon_item_watch_record_height"
+        android:layout_weight="8"
+        android:background="@color/lemon_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lemon_item_ll_watvh_Record_iv_Icon"
+            android:layout_width="@dimen/lemon_item_watch_record_iv_width"
+            android:layout_height="@dimen/lemon_item_watch_record_iv_height"
+            android:layout_marginLeft="@dimen/lemon_item_watch_record_iv_mleft"
+            android:layout_marginRight="@dimen/lemon_item_watch_record_iv_mleft"
+            android:src="@drawable/lemon_video_defr"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lemon_item_watch_record_ll_height"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lemon_item_ll_watvh_Record_ll_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/lemon_record_tv"
+                android:textSize="@dimen/lemon_search_content_movies_textsize"/>
+
+            <LinearLayout
+                android:id="@+id/lemon_item_ll_watvh_Record_ll_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lemon_item_watch_record_ll_ll_Top"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/lemon_item_ll_watvh_Record_ll_content"
+                    android:layout_width="@dimen/lemon_item_watch_record_ll_ll_height"
+                    android:layout_height="@dimen/lemon_item_watch_record_ll_ll_height"
+                    android:layout_marginRight="@dimen/lemon_item_watch_record_ll_ll_Top"
+                    android:src="@drawable/lemon_viewing_time"/>
+
+                <TextView
+                    android:id="@+id/lemon_item_ll_watvh_Record_ll_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/lemon_item_watch_record_ll_ll_Top"
+                    android:textColor="@color/lemon_camera_progress_textcolor"
+                    android:textSize="@dimen/lemon_item_watch_record_ll_tv_size"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/lemon_item_ll_watvh_Record_ll_collection_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lemon_camera_progress_textcolor"
+                    android:textSize="@dimen/lemon_item_watch_record_ll_tv_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lemon_item_ll_watvh_Record_ll_ll_dianji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lemon_item_watch_record_ll_ll_Top"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lemon_search_content_dianji"
+                    android:textColor="@color/lemon_anniu_tv"
+                    android:textSize="@dimen/lemon_private_custom_dianji_size"/>
+
+                <TextView
+                    android:id="@+id/lemon_item_ll_watvh_Record_ll_ll_dianji_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lemon_camera_progress_textcolor"
+                    android:textSize="@dimen/lemon_private_custom_dianji_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lemon_item_ll_watvh_Record_ll_ll_youxiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lemon_item_watch_record_ll_ll_Top"
+
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lemon_search_content_youxiao"
+                    android:textColor="@color/lemon_anniu_tv"
+                    android:textSize="@dimen/lemon_private_custom_dianji_size"/>
+
+                <TextView
+                    android:id="@+id/lemon_item_ll_watvh_Record_ll_ll_youxiao_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lemon_camera_progress_textcolor"
+                    android:textSize="@dimen/lemon_private_custom_dianji_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lemon_item_ll_watvh_Record_ll_ll_tianjia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lemon_item_watch_record_ll_ll_Top"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/lemon_item_ll_watvh_Record_ll_ll_tianjiao_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lemon_camera_progress_textcolor"
+                    android:textSize="@dimen/lemon_private_custom_dianji_size"/>
+            </LinearLayout>
+
+            <com.lemon95.lemonvideolib.customization.myview.AutoAdaptTextView
+                android:id="@+id/lemon_item_ll_watvh_Record_ll_tv_cotent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/lemon_private_custom_dianji_left"
+                android:layout_marginTop="@dimen/lemon_item_watch_record_ll_ll_Top"
+                android:ellipsize="end"
+                android:textColor="@color/lemon_camera_progress_textcolor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lemon_item_ll_watvh_Record_tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/lemon_private_custom_dianji_left"
+        android:layout_marginRight="@dimen/lemon_item_watch_record_ll_tv_marginRight"
+        android:drawableLeft="@drawable/lemon_amount_of_money"
+        android:maxLines="1"
+        android:textColor="@color/lemon_anniu_tv"
+        android:textSize="@dimen/lemon_search_content_movies_textsize"
+        android:visibility="gone"
+        />
+
+    <CheckBox
+        android:id="@+id/lemon_item_ll_watvh_Record_iv_xuanze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/lemon_private_custom_dianji_left"
+        android:layout_marginRight="@dimen/lemon_item_watch_record_ll_tv_marginRight"
+        android:button="@drawable/lemon_checkbox_selector"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="visible"
+        />
+</LinearLayout>

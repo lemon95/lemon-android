@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_bg"
+    tools:context="com.lemon95.lemonvideolib.special.view.SpecialFromActivity">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lemon_high"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/lemon_video_recording_left"
+            android:background="@color/lemon_main_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lemon_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lemon_item_watch_record_iv_mleft">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lemon_msg_title"
+                    android:textColor="@color/lemon_record_tv"
+                    android:textSize="@dimen/lemon_buy_button_size" />
+
+                <EditText
+                    android:id="@+id/lemon_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/lemon_white"
+                    android:hint="@string/lemon_msg"
+                    android:maxLength="15"
+                    android:textColor="@color/lemon_record_tv"
+                    android:textSize="@dimen/lemon_buy_button_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/lemon_main_line"></View>
+
+            <EditText
+                android:id="@+id/lemon_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/lemon_white"
+                android:gravity="top|left"
+                android:hint="@string/lemon_msg_t"
+                android:maxLength="225"
+                android:lines="5"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/lemon_record_tv"
+                android:textSize="@dimen/lemon_buy_button_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lemon_main_line"></View>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/lemon_video_recording_left"
+            android:background="@color/lemon_main_line"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lemon_white"
+            android:orientation="horizontal">
+
+
+            <VideoView
+                android:id="@+id/lemon_surfaceview"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lemon_main_line"></View>
+
+        <Button
+            android:id="@+id/lemon_sub_but"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lemon_pay_but_size"
+            android:layout_marginTop="@dimen/lemon_search_content_movies_size"
+            android:layout_marginLeft="@dimen/lemon_more_item_top"
+            android:layout_marginRight="@dimen/lemon_more_item_top"
+            android:text="@string/lemon_but_submit"
+            android:textSize="@dimen/lemon_pay_msg_size"
+            android:textColor="@color/lemon_white"
+            android:background="@drawable/lemon_common_but_bg"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

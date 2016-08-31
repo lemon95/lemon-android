@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+
+
+    <ImageView
+        android:id="@+id/lemon_movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_maylike_item_image_height"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/lemon_video_defr"/>
+
+    <TextView
+        android:id="@+id/lemon_movie_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/lemon_maylike_item_text_height"
+        android:layout_below="@id/lemon_movie_image"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/lemon_movie_intro"
+        android:textSize="@dimen/lemon_maylike_item_size"/>
+
+</RelativeLayout>

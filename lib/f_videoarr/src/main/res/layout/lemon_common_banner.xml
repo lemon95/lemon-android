@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lemon_banner_hig"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_banner_hig">
+
+        <com.zanlabs.widget.infiniteviewpager.InfiniteViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" />
+
+        <com.zanlabs.widget.infiniteviewpager.indicator.LinePageIndicator
+            android:id="@+id/indicator"
+            app:fillColor="@color/lemon_banner_def"
+            app:pageColor="@color/lemon_focus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/lemon_banner_focus_buttom" />
+    </RelativeLayout>
+</LinearLayout>

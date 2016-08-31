@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lemon_high"
+    android:background="@color/lemon_top_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_top_back_id"
+            android:layout_width="@dimen/lemon_to_back"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/lemon_type_title_left">
+
+            <ImageView
+                android:layout_width="@dimen/lemon_iv_top_left_size"
+                android:layout_height="@dimen/lemon_iv_top_left_size"
+                android:src="@drawable/icon_fanhui" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_top_compile_title"
+            style="@style/top_title" />
+
+        <LinearLayout
+            android:id="@+id/ll_top_rig_id"
+            android:layout_width="@dimen/lemon_to_back"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/lemon_iv_seek"
+                android:layout_width="@dimen/lemon_video_recording_top"
+                android:layout_height="@dimen/lemon_video_recording_top"
+                android:layout_marginRight="@dimen/lemon_top_function_rig" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

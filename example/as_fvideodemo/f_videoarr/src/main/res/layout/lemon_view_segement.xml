@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_private_custom_hi"
+        android:background="@color/lemon_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lemon_discharged_weishen"
+            android:layout_width="@dimen/lemon_private_custom_wi"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@color/lemon_white"
+            android:gravity="center"
+            android:text="@string/lemon_search_content_liebiao"
+            android:drawableBottom="@drawable/lemon_xiahuaxian"
+            android:textColor="@color/lemon_set_text_color"
+            android:textSize="@dimen/lemon_anniu_index_size"/>
+        <ImageView
+            android:id="@+id/accetp_iv_load"
+            android:layout_width="wrap_content"
+            android:background="@drawable/lemon_fengexian"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/lemon_discharged_wancheng"
+            android:layout_width="@dimen/lemon_private_custom_wi"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@color/lemon_white"
+            android:gravity="center"
+            android:text="@string/lemon_search_content_jindu"
+            android:textSize="@dimen/lemon_anniu_index_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lemon_line"
+        android:background="@color/lemon_main_line"></View>
+</LinearLayout>

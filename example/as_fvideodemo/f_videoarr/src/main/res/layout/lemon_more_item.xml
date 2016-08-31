@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/lemon_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/lemon_iv_more_item_img"
+        android:layout_marginTop="@dimen/lemon_more_item_top"
+        android:layout_width="@dimen/lemon_iv_type_size"
+        android:layout_height="@dimen/lemon_iv_type_size" />
+
+    <TextView
+        android:id="@+id/lemon_tv_more_item_tv"
+        android:layout_marginBottom="@dimen/lemon_more_item_top"
+        style="@style/main_type_text" />
+
+</LinearLayout>

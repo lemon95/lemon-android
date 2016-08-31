@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/lemon_search_content_top"
+        layout="@layout/lemon_common_top_compile"></include>
+
+    <include layout="@layout/lemon_content_view"></include>
+
+    <include
+        layout="@layout/lemon_common_load_ma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/lemon_search_rl_jiemian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/lemon_search_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lemon_white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/lemon_search_content_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lemon_skin_bug_height"
+                android:layout_margin="@dimen/lemon_vipactivity_top_20"
+                android:background="@drawable/lemon_bg_open_vip"
+                android:text="@string/lemon_search_content_movies_other_queren"
+                android:textColor="@color/lemon_white"
+                android:textSize="@dimen/lemon_skin_text_size"/>
+
+            <Button
+                android:id="@+id/lemon_search_content_button2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lemon_skin_bug_height"
+                android:layout_marginBottom="@dimen/lemon_vipactivity_top_20"
+                android:layout_marginLeft="@dimen/lemon_vipactivity_top_20"
+                android:layout_marginRight="@dimen/lemon_vipactivity_top_20"
+                android:background="@drawable/lemon_bg_open_quxiao_vip"
+                android:text="@string/lemon_search_content_movies_noyingpian"
+                android:textColor="@color/lemon_anniu_sousuo"
+                android:textSize="@dimen/lemon_skin_text_size"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lemon_search_content_button_line"
+            style="@style/lemon_line"
+            android:layout_above="@id/lemon_search_content_ll"></View>
+
+        <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView
+            android:id="@+id/lemon_search_content_listview"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lemon_search_content_button_line"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="rotate"
+            ptr:ptrHeaderTextColor="@color/lemon_type_color"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrRotateDrawableWhilePulling="true">
+        </com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView>
+    </RelativeLayout>
+
+</LinearLayout>

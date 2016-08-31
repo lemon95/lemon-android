@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/lemon_common_top_back"></include>
+
+    <ImageView
+        android:layout_width="@dimen/lemon_not_what_ll_tv_wight"
+        android:layout_height="@dimen/lemon_not_what_ll_tv_hight"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/lemon_feedbock_size_Bottom"
+        android:layout_marginTop="@dimen/lemon_feedbock_size_Bt_top"
+        android:src="@drawable/lemon_neiyouwoxiangyaodeneirong"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lemon_resoubang_fankui_fankui"
+        android:textSize="@dimen/lemon_feedbock_size_bt"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lemon_resoubang_fankui_chuli"
+        android:textSize="@dimen/lemon_feedbock_size_bt"
+        ></TextView>
+
+    <Button
+        android:id="@+id/ll_fanhui_fanhui_id"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/lemon_comment_edit_bg"
+        android:paddingLeft="@dimen/lemon_feedbock_size_Bt_padd"
+        android:paddingRight="@dimen/lemon_feedbock_size_Bt_padd"
+        android:text="@string/lemon_resoubang_fankui_fanhui"
+        android:textColor="@color/lemon_fankui_textcolor"
+        android:textSize="@dimen/lemon_not_what_ll_tv_textSize"
+        ></Button>
+</LinearLayout>

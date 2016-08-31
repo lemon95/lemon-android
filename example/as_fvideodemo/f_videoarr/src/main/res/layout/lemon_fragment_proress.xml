@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lemon_search_content_list_listview_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_bg"
+        >
+
+        <Button
+            android:id="@+id/lemon_search_content_proress_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lemon_skin_bug_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lemon_white"
+            android:text="@string/lemon_search_content_movies_xiangkan"
+            android:textColor="@color/lemon_top_bg"
+            android:textSize="@dimen/lemon_skin_text_size"/>
+
+        <View
+            android:id="@+id/lemon_search_content_button_proress_line"
+            style="@style/lemon_line"
+            android:layout_above="@+id/lemon_search_content_proress_button"
+            ></View>
+
+        <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView
+            android:id="@+id/lemon_search_content_proress_listview"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lemon_search_content_button_proress_line"
+            android:dividerHeight="0.2dp"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="rotate"
+            ptr:ptrHeaderTextColor="@color/lemon_type_color"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrRotateDrawableWhilePulling="true"></com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lemon_search_content_list_listview_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@color/lemon_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/lemon_not_what_ll_tv_wight"
+            android:layout_height="@dimen/lemon_not_what_ll_tv_hight"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/lemon_no_dingzhi"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/lemon_search_content_listFragment_prompt"
+            android:textSize="@dimen/lemon_not_what_ll_tv_textSize"
+            ></TextView>
+
+        <Button
+            android:id="@+id/lemon_search_content_list_button4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lemon_skin_bug_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/lemon_common_but_bg"
+            android:text="@string/lemon_search_content_movies_xiangkan"
+            android:textColor="@color/lemon_white"
+            android:textSize="@dimen/lemon_skin_text_size"/>
+    </LinearLayout>
+</LinearLayout>

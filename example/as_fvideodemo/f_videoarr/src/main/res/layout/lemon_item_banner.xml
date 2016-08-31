@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lemon_banner_hig"
+    android:background="@color/lemon_banner_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lemon_banner_hig"
+        android:background="@drawable/lemon_banner_def">
+
+        <ImageView
+            android:id="@+id/item_tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lemon_banner_def" />
+
+        <LinearLayout
+            android:id="@+id/lemon_ll_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/lemon_video_msg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/lemon_banner_focus_buttom">
+
+            <TextView
+                android:id="@+id/lemon_tv_title1"
+                style="@style/lemon_main_video_msg"
+                android:ellipsize="end"
+                android:paddingBottom="3dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

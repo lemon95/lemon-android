@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lemon_buy_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lemon_icon8"
+            android:text="@string/lemon_buy_video_tip"
+            android:textColor="@color/lemon_white"
+            android:textSize="@dimen/lemon_buy_tip_size" />
+
+        <LinearLayout
+            android:id="@+id/lemon_buttons_ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/lemon_buy_margin_top"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/lemon_pay_for_single_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/lemon_orange_btn_bg"
+                android:text="@string/lemon_pay_for_single"
+                android:textColor="@color/lemon_white"
+                android:textSize="@dimen/lemon_buy_button_size" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/lemon_buy_line_bg" />
+
+
+            <Button
+                android:id="@+id/lemon_pay_for_day_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/lemon_orange_btn_bg"
+                android:text="@string/lemon_pay_for_day"
+                android:textColor="@color/lemon_white"
+                android:textSize="@dimen/lemon_buy_button_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lemon_pay_for_serials_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/lemon_buy_margin_top"
+            android:background="@drawable/lemon_orange_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/lemon_buy_button_padding_horizen"
+            android:paddingRight="@dimen/lemon_buy_button_padding_horizen"
+            android:text="@string/lemon_pay_for_serials"
+            android:textColor="@color/lemon_white"
+            android:textSize="@dimen/lemon_buy_button_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/lemon_cuustom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/lemon_buy_margin_top"
+            android:background="@drawable/lemon_orange_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/lemon_buy_button_padding_horizen"
+            android:paddingRight="@dimen/lemon_buy_button_padding_horizen"
+            android:text="@string/lemon_pay_for_customize"
+            android:textColor="@color/lemon_white"
+            android:textSize="@dimen/lemon_buy_button_size"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

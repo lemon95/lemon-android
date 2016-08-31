@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/lemon_white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lemon_item_watch_record_iv_mleft"
+            android:layout_marginRight="@dimen/lemon_item_watch_record_iv_mleft">
+
+
+            <ImageView
+                android:id="@+id/lemon_item_special_list_iv"
+                android:layout_width="115dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lemon_def_tv"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lemon_open_imview_dara_hi"
+            android:layout_marginRight="@dimen/lemon_item_watch_record_iv_mleft"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/lemon_item_watch_record_iv_mleft"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/lemon_item_special_list_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:textColor="@color/lemon_record_tv"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/lemon_item_special_list_tv_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lemon_item_ll_search_name"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:textColor="@color/lemon_error_title"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lemon_item_special_list_tv_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/lemon_camera_progress_textcolor"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

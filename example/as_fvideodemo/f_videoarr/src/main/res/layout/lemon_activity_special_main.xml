@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lemon_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/lemon_common_top_back"></include>
+
+    <include layout="@layout/lemon_content_view"></include>
+
+    <include
+        layout="@layout/lemon_common_load_ma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lemon_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/lemon_special_feature_lv_iv_tupian"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/lemon_banner_def"/>
+
+        <View style="@style/lemon_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lemon_white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/lemon_type_top"
+            android:paddingTop="@dimen/lemon_type_top">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lemon_type_title_hig"
+                android:layout_marginLeft="@dimen/lemon_type_title_left"
+                android:src="@drawable/lemon_fenlei"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/lemon_type_top"
+                android:text="热门专题"
+                android:textColor="@color/lemon_record_tv"
+                android:textSize="@dimen/lemon_type_text_size"/>
+        </LinearLayout>
+
+        <View style="@style/lemon_line"></View>
+
+        <View
+            style="@style/lemon_line"
+            android:layout_marginBottom="5dp"></View>
+
+        <View
+            style="@style/lemon_line"></View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lemon_special_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon_white"
+        android:orientation="vertical">
+
+        <com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView
+            android:id="@+id/lemon_activity_special_listview"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lemon_search_content_button_line"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="rotate"
+            android:dividerHeight="0.2dp"
+            ptr:ptrHeaderTextColor="@color/lemon_type_color"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrRotateDrawableWhilePulling="true">
+        </com.lemon95.lemonvideolib.common.myview.gridview.PullToRefreshListView>
+    </RelativeLayout>
+</LinearLayout>
