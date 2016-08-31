@@ -30,13 +30,13 @@
         android:supportsRtl="true" >
         <meta-data
             android:name="LEMON_SECRETKEY"
-            android:value="ec8b570ad4bd403783c52ecb5cdfa849" />
+            android:value="渠道key" />
         <meta-data
             android:name="LEMON_PLAYKEY"
             android:value="4JRKyMthe" />
         <meta-data
             android:name="LEMON_APPKEY"
-            android:value="ym" />
+            android:value="应用key" />
         <meta-data
             android:name="CIBN_PLAYER_APPKEY"
             android:value="ZDBhODU3ZWU1ZTg3" />
