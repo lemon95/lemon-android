@@ -35,7 +35,7 @@ intent.putExtra("HeadImgUrl", "http://b.hiphotos.baidu.com/zhidao/pic/item/dc545
 startActivity(intent);
 ```
 #### 5、启动效果
-![](https://github.com/lemon95/lemon-android/blob/master/img/1.gif "首页") ![](https://github.com/lemon95/lemon-android/blob/master/img/2.gif "影视列表")
+![](https://github.com/lemon95/lemon-android/blob/master/img/1.gif "首页")               ![](https://github.com/lemon95/lemon-android/blob/master/img/2.gif "影视列表")
 
 ## 注意事项
 * Lemon Video Android SDK 可能会与百度统计等其他第三方 jar 包冲突，当同时使用这些 jar 包的时候用户需要根据情况判断保留哪一方的 jar 包。
