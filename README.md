@@ -13,7 +13,7 @@ Android SDK 要求 Android 4.0 及以上版本
 请使用 Java 7 或以上版本
 
 ## 接入方法
-#### 1、联系柠檬运营申请相应的渠道key “LEMON_SECRETKEY” ，应用key “LEMON_APPKEY”；
+#### 1、联系柠檬运营提供相应的APP包名申请渠道key “LEMON_SECRETKEY” ，应用key “LEMON_APPKEY”；
 #### 2、在自己的工程项目中引入Library Project:'f_videoarr' 并添加依赖；[引入DEMO](http://jingyan.baidu.com/article/1974b2898917aff4b1f77415.html)
 #### 3、在Library Project：‘f_videoarr’ 的清单文件AndroidManifest.xml 中配置申请的渠道key和应用key
 ```xml
